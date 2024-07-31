@@ -10,8 +10,51 @@ from keras.src import regularizers
 from keras.src.api_export import keras_export
 from keras.src.layers.input_spec import InputSpec
 from keras.src.layers.layer import Layer
-def quantizeWeights(weights):
+import numpy 
 
+def Quantizeweights(weights):
+    weights_absolute=numpy.absolute(weights)
+    maxweight=numpy.max(weights_absolute)
+    print(maxweight)
+    scaled_weights=weights/maxweight
+    print(scaled_weights)
+    lq_vect=numpy.vectorize(LQ)
+    lq=lq_vect(scaled_weights,4)
+    print(f'aloha {lq}')
+
+
+    #pot_vect=numpy.vectorize(powertwo)
+    #final_weights=pot_vect(lq,maxweight)
+    #print(final_weights)
+
+
+
+
+def clip(weight,bitwidth):
+    weight_log=numpy.round(numpy.log2(numpy.absolute(weight)))
+    bit_pot=-2**bitwidth
+    if weight_log<bit_pot:
+        return 0
+    elif weight_log>=0:
+        return -1
+    else:
+        return weight
+def LQ(weight,bitwidth):
+    if weight==0:
+        return 0
+    else:
+        weight_log=numpy.round(numpy.log2(numpy.absolute(weight)))
+        bit_pot=-2**bitwidth
+        if weight_log<bit_pot:
+         return 0
+        elif weight_log>=0:
+         return -1
+        else:
+         return weight
+def powertwo(weight,sf):
+    pot_weight=(2**weight)*sf
+    return pot_weight
+    
 
 @keras_export("keras.layers.Dense")
 class Dense(Layer):
@@ -148,7 +191,7 @@ class Dense(Layer):
         return self._kernel
 
     def call(self, inputs):
-
+        weights=self.kernel.numpy()
         x = ops.matmul(inputs, self.kernel)
         if self.bias is not None:
             x = ops.add(x, self.bias)
@@ -603,3 +646,4 @@ class Dense(Layer):
                 kernel_scale = ops.squeeze(kernel_scale, axis=0)
             return kernel_value, kernel_scale
         return self.kernel, None
+    
