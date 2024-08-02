@@ -21,6 +21,12 @@ def Quantizeweights(weights):
     lq_vect=numpy.vectorize(LQ)
     lq=lq_vect(scaled_weights,4)
     print(f'aloha {lq}')
+    return lq
+def bitshift(weight,shift):
+    if shift<0:
+        return weight>>numpy.abs(shift)
+    else:
+        return weight<<shift
 
 
     #pot_vect=numpy.vectorize(powertwo)
@@ -29,7 +35,26 @@ def Quantizeweights(weights):
 
 
 
-
+def check_integer_zero_and_first_two_decimals_zero(number):
+    # Check if the integer part is zero
+    if int(number) != 0:
+        return False
+    
+    # Convert the number to a string
+    num_str = str(number)
+    
+    # Find the decimal point
+    decimal_point_index = num_str.find('.')
+    
+    # Check if there is a decimal point and if the length after the decimal point is at least 2
+    if decimal_point_index != -1 and len(num_str) > decimal_point_index + 2:
+        # Get the first two decimal places
+        first_two_decimals = num_str[decimal_point_index + 1:decimal_point_index + 3]
+        # Check if the first two decimal places are "00"
+        return first_two_decimals == "00"
+    
+    # If there are no decimal places or less than two decimal places, return False
+    return False
 def clip(weight,bitwidth):
     weight_log=numpy.round(numpy.log2(numpy.absolute(weight)))
     bit_pot=-2**bitwidth
@@ -38,19 +63,19 @@ def clip(weight,bitwidth):
     elif weight_log>=0:
         return -1
     else:
-        return weight
+        return weight_log
 def LQ(weight,bitwidth):
-    if weight==0:
+    if weight==0 or check_integer_zero_and_first_two_decimals_zero(weight):
         return 0
     else:
-        weight_log=numpy.round(numpy.log2(numpy.absolute(weight)))
+        weight_log=int(numpy.log2(numpy.absolute(weight)))
         bit_pot=-2**bitwidth
         if weight_log<bit_pot:
          return 0
-        elif weight_log>=0:
-         return -1
         else:
-         return weight
+         if weight>0:
+             return numpy.abs(weight_log)
+         return weight_log
 def powertwo(weight,sf):
     pot_weight=(2**weight)*sf
     return pot_weight
