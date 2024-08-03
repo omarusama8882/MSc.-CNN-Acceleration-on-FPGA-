@@ -11,16 +11,33 @@ from keras.src.api_export import keras_export
 from keras.src.layers.input_spec import InputSpec
 from keras.src.layers.layer import Layer
 import numpy 
+def MatrixMul(A,B):
+    
+    columns2=B.shape[1]
+    rows2=B.shape[0]
+    C=numpy.zeros(shape=(columns2))
+    for j in range(0,rows2):
+            for  k in range(0,columns2):
+                C[k]+=A[j]*B[j][k]
+    return C
+def MatrixBitShift(A,B):
+    columns2=B.shape[1]
+    rows2=B.shape[0]
+    C=numpy.zeros(shape=(columns2))
+    for j in range(0,rows2):
+            for  k in range(0,columns2):
+                C[k]+=bitshift(A[j],B[j][k])
+    return C
 
 def Quantizeweights(weights):
     weights_absolute=numpy.absolute(weights)
     maxweight=numpy.max(weights_absolute)
-    print(maxweight)
+    #print(maxweight)
     scaled_weights=weights/maxweight
-    print(scaled_weights)
+    #print(scaled_weights)
     lq_vect=numpy.vectorize(LQ)
     lq=lq_vect(scaled_weights,4)
-    print(f'aloha {lq}')
+    #print(f'aloha {lq}')
     return lq
 def bitshift(weight,shift):
     if shift<0:
@@ -217,9 +234,11 @@ class Dense(Layer):
 
     def call(self, inputs):
         weights=self.kernel.numpy()
-        x = ops.matmul(inputs, self.kernel)
+        quantized_weights=Quantizeweights(weights)
+        #x = ops.matmul(inputs, self.kernel)
+        x=MatrixBitShift(inputs.numpy(),weights)
         if self.bias is not None:
-            x = ops.add(x, self.bias)
+            x = ops.add(x, self.bias.numpy())
         if self.activation is not None:
             x = self.activation(x)
         return x
