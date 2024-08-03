@@ -98,9 +98,8 @@ def powertwo(weight,sf):
     return pot_weight
     
 
-@keras_export("keras.layers.Dense")
 class Dense(Layer):
-    """Just your regular densely-connected NN layer.
+    """Just your regular densely-connected NN layer with Quantized weights and bit shifting.
 
     `Dense` implements the operation:
     `output = activation(dot(input, kernel) + bias)`
