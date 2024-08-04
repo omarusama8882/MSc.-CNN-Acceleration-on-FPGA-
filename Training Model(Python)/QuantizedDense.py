@@ -30,6 +30,7 @@ def MatrixBitShift(A,B):
     return C
 
 def Quantizeweights(weights):
+    weights=weights.numpy()
     weights_absolute=numpy.absolute(weights)
     maxweight=numpy.max(weights_absolute)
     #print(maxweight)
@@ -232,12 +233,12 @@ class Dense(Layer):
         return self._kernel
 
     def call(self, inputs):
-        weights=self.kernel.numpy()
-        quantized_weights=Quantizeweights(weights)
+        
+        quantized_weights=Quantizeweights(self.kernel)
         #x = ops.matmul(inputs, self.kernel)
-        x=MatrixBitShift(inputs.numpy(),weights)
+        x=MatrixBitShift(inputs,quantized_weights)
         if self.bias is not None:
-            x = ops.add(x, self.bias.numpy())
+            x = ops.add(x, self.bias)
         if self.activation is not None:
             x = self.activation(x)
         return x
