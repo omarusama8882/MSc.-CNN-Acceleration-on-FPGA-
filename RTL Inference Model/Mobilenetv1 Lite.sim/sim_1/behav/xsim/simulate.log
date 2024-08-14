@@ -1,11 +1,12 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
-   32
-    2
+57344
+ 7680
 shift=15
-   16
-    4
+61440
+15360
 65504
 65534
 65520
-65532
+unshifted=3.500000
+shifted=7.000000

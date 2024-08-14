@@ -1,6 +1,6 @@
 module ReLU(
-     input signed [15:0] val,
-     output reg [15:0] k
+     input signed [7:-8] val,
+     output reg [7:-8] k
 );
 always @* begin
 if (val>0) begin
