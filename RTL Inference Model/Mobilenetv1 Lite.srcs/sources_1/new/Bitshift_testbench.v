@@ -14,35 +14,38 @@ Bitshift uut (
 .neg(neg)
 );
 initial begin
-unshifted = 16'b0000011100000000 ;
+unshifted = 16'b0000011000000000 ;
 ShiftValueAndSign = 4'b0010;
 
 #5 ShiftValueAndSign = 4'b1110;
-$display("%d",shifted);
+$display("%f",$itor(shifted*SF));
 
 #5 ShiftValueAndSign = 4'b0001;
-$display("%d",shifted);
+$display("%f",$itor(shifted*SF));
 
 #5 ShiftValueAndSign = 4'b1111;
 $display("shift=%d",ShiftValueAndSign);
-$display("%d",shifted);
+$display("%f",$itor(shifted*SF));
 #5
-unshifted=16'b1111111111111000;
+unshifted=16'b1111111100000000;
 ShiftValueAndSign = 4'b0010;
-$display("%d",shifted);
+$display("%f",$itor(shifted*SF));
 #5
 ShiftValueAndSign = 4'b1110;
-$display("%d",shifted);
+$display("%f",$itor(shifted*SF));
 #5
 ShiftValueAndSign = 4'b0001;
-$display("%d",shifted);
+$display("%f",$itor(shifted*SF));
 #5
 ShiftValueAndSign = 4'b1111;
-$display("%d",shifted);
+$display("%f",$itor(shifted*SF));
 #5
-unshifted=16'b00000011_10000000;
+unshifted=16'b00000010_10000000;
 ShiftValueAndSign = 4'b0001;
+$display("%f",$itor(shifted*SF));
+
 $display("unshifted=%f",$itor(unshifted*SF));
+
 #5
 $display("shifted=%f",$itor(shifted*SF));
 

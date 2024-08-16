@@ -1,8 +1,7 @@
 module Bitshift (
 input signed [7:-8] unshifted ,
 input signed [3:0] ShiftValueAndSign ,
-output reg signed [15:0] shifted,
-output wire neg
+output reg signed [15:0] shifted
 );
 wire [2:0] shift2scomplement;
 wire [2:0] shiftvalue ;
@@ -20,6 +19,5 @@ else begin
 shifted=unshifted<<<ShiftValueAndSign;
 end
 end
-assign neg=(shifted>=0)?0:1;
 
 endmodule

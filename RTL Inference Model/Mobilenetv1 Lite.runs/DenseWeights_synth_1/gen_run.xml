@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="DenseWeights_synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1723724145">
+  <File Type="PA-TCL" Name="DenseWeights.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DenseWeights_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="DenseWeights_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DenseWeights.vds"/>
+  <File Type="RDS-UTIL" Name="DenseWeights_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DenseWeights_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DenseWeights.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DenseWeights_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DenseWeights_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DenseWeights">
+    <File Path="$PSRCDIR/sources_1/DenseWeights/DenseWeights/DenseWeights.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="DenseWeights"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DenseWeights">
+    <File Path="$PSRCDIR/sources_1/DenseWeights/DenseWeights/DenseWeights.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="DenseWeights"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
