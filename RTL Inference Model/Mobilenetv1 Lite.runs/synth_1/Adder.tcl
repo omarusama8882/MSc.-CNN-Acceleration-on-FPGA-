@@ -28,7 +28,7 @@ set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kcu116:part0:1.2 [current_project]
 set_property ip_output_repo {c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Bitshift.v}}
+read_verilog -library xil_defaultlib {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v}}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -38,10 +38,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top Bitshift -part xcku5p-ffvb676-2-e
+synth_design -top Adder -part xcku5p-ffvb676-2-e
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Bitshift.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Bitshift_utilization_synth.rpt -pb Bitshift_utilization_synth.pb"
+write_checkpoint -force -noxdef Adder.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file Adder_utilization_synth.rpt -pb Adder_utilization_synth.pb"

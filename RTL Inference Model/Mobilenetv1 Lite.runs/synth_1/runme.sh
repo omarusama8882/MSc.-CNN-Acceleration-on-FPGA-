@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Bitshift.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bitshift.tcl
+EAStep vivado -log Adder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Adder.tcl
