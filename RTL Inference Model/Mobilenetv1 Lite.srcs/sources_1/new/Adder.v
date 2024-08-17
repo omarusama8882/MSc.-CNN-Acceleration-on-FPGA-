@@ -16,8 +16,25 @@ wire signed[15:-8] level8;
 
 genvar i;
 generate
-for(i=0;i<256;i=i+1) begin:load
-assign values[i]=bitshifts[15*i:15*i+15];
+//for(i=0;i<256;i=i+1) begin:load
+//assign values[i]=bitshifts[16*i:16*i+15];
+//end
+//endgenerate
+for(i=0;i<32;i=i+1) begin:load
+assign values[8*i]=bitshifts[8*16*i:8*16*i+15];
+assign values[8*i+1]=bitshifts[8*16*i+16:8*16*i+31];
+assign values[8*i+2]=bitshifts[8*16*i+32:8*16*i+47];
+assign values[8*i+3]=bitshifts[8*16*i+48:8*16*i+63];
+assign values[8*i+4]=bitshifts[8*16*i+64:8*16*i+79];
+assign values[8*i+5]=bitshifts[8*16*i+80:8*16*i+95];
+assign values[8*i+6]=bitshifts[8*16*i+96:8*16*i+111];
+assign values[8*i+7]=bitshifts[8*16*i+112:8*16*i+127];
+
+
+
+
+
+
 end 
 endgenerate
 generate
