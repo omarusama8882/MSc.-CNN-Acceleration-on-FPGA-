@@ -1,7 +1,7 @@
 module Adder(
 input  signed [0:4095] bitshifts,
 input signed[7:-8] bias,
-output signed[7:-8] result
+output signed[15:-8] result
 );
 
 wire signed[7:-8] values [0:255];
@@ -82,17 +82,17 @@ assign level4[4*i+2]=level3[4*2*i+4]+level3[4*2*i+5];
 assign level4[4*i+3]=level3[4*2*i+6]+level3[4*2*i+7];
 end
 endgenerate
-generate
-for(i=0;i<2;i=i+1) begin:level5loop
-assign level5[4*i]=level4[4*2*i]+level4[4*2*i+1];
-assign level5[4*i+1]=level4[4*2*i+2]+level4[4*2*i+3];
-assign level5[4*i+2]=level4[4*2*i+4]+level3[4*2*i+5];
-assign level5[4*i+3]=level4[4*2*i+6]+level4[4*2*i+7];
-end
-endgenerate
+assign level5[0]=level4[0]+level4[1];
+assign level5[1]=level4[2]+level4[3];
+assign level5[2]=level4[4]+level4[5];
+assign level5[3]=level4[6]+level4[7];
+assign level5[4]=level4[8]+level4[9];
+assign level5[5]=level4[10]+level4[11];
+assign level5[6]=level4[12]+level4[13];
+assign level5[7]=level4[14]+level4[15];
 assign level6[0]=level5[0]+level5[1];
 assign level6[1]=level5[2]+level5[3];
-assign level6[2]=level5[4]+level6[5];
+assign level6[2]=level5[4]+level5[5];
 assign level6[3]=level5[6]+level5[7];
 assign level7[0]=level6[0]+level6[1];
 assign level7[1]=level6[2]+level6[3];

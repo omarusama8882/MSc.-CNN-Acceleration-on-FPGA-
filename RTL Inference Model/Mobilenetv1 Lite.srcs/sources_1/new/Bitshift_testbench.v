@@ -1,6 +1,4 @@
 `timescale 1ns / 1ps
-
-
 module Bitshift_testbench;
 reg [7:-8] unshifted ;
 reg [3:0] ShiftValueAndSign ;

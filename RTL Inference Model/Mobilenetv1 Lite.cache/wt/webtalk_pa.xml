@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Aug 17 17:29:51 2024">
+<application name="pa" timeStamp="Sat Aug 17 18:13:37 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="b077b95d4f054b6490f0477358820d2d" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -26,18 +26,18 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RunSynthesis" value="15" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="30" type="JavaHandler"/>
 <property name="SetTopNode" value="8" type="JavaHandler"/>
-<property name="ShowView" value="12" type="JavaHandler"/>
+<property name="ShowView" value="13" type="JavaHandler"/>
 <property name="SimulationRun" value="25" type="JavaHandler"/>
 <property name="ToolsSettings" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AbstractSearchablePanel_SHOW_SEARCH" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="68" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="69" type="GuiHandlerData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="3" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="6" type="GuiHandlerData"/>
 <property name="CustomizeCoreDialog_CHOOSE_IP_LOCATION" value="2" type="GuiHandlerData"/>
 <property name="CustomizeCoreDialog_IP_LOCATION" value="2" type="GuiHandlerData"/>
-<property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="66" type="GuiHandlerData"/>
+<property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="67" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="147" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="2" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="50" type="GuiHandlerData"/>
