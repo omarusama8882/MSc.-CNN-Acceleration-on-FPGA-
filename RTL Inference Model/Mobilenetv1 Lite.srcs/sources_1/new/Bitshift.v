@@ -1,5 +1,5 @@
 module Bitshift (
-input signed [7:-8] unshifted ,
+input signed [15:0] unshifted ,
 input signed [3:0] ShiftValueAndSign ,
 output reg signed [15:0] shifted
 );

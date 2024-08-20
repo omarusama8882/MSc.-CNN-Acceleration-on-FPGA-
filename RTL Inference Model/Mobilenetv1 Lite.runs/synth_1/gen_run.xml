@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1724146633">
-  <File Type="PA-TCL" Name="Adder.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Adder_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Adder_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Adder.vds"/>
-  <File Type="RDS-UTIL" Name="Adder_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Adder_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Adder.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Adder_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Adder_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1724176273">
+  <File Type="PA-TCL" Name="DenseLayer.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DenseLayer_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="DenseLayer_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DenseLayer.vds"/>
+  <File Type="RDS-UTIL" Name="DenseLayer_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DenseLayer_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DenseLayer.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DenseLayer_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DenseLayer_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Adder.v">
@@ -20,15 +20,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Bitshift.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Bitshift_testbench.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -36,7 +27,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/DenseLayer.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Bitshift_testbench.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -44,7 +41,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ReLU.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -52,7 +48,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ReLU_testbench.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -60,7 +55,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Adder_testbench.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -68,7 +62,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Adder"/>
+      <Option Name="TopModule" Val="DenseLayer"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -81,4 +75,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DenseWeights"/>
 </GenRun>
