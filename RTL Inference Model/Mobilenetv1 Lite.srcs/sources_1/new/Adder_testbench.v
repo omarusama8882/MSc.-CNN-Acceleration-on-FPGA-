@@ -1,10 +1,10 @@
 `timescale 1ns / 1ps
 module Adder_testbench;
 reg  signed [0:4095] bitshifts;
-reg signed[7:-8] bias;
-wire signed[15:-8] result;
+reg signed[15:0] bias;
+wire signed[23:0] result;
 Adder uut(
-.bitshifts(bitshifts),
+.values(bitshifts),
 .bias(bias),
 .result(result)
 );

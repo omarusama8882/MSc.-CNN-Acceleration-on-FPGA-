@@ -14,130 +14,129 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14136 
+INFO: Helper process launched with PID 4552 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 387.168 ; gain = 97.355
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 387.441 ; gain = 97.516
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Adder' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:1]
-WARNING: [Synth 8-324] index 5 out of range [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:95]
 INFO: [Synth 8-256] done synthesizing module 'Adder' (1#1) [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:1]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1280]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1281]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1282]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1283]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1284]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1285]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1286]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1287]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1288]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1289]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1290]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1291]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1292]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1293]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1294]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1295]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1296]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1297]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1298]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1299]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1300]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1301]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1302]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1303]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1304]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1305]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1306]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1307]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1308]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1309]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1310]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1311]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1312]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1313]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1314]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1315]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1316]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1317]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1318]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1319]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1320]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1321]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1322]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1323]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1324]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1325]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1326]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1327]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1328]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1329]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1330]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1331]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1332]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1333]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1334]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1335]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1336]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1337]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1338]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1339]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1340]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1341]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1342]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1343]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1344]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1345]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1346]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1347]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1348]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1349]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1350]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1351]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1352]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1353]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1354]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1355]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1356]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1357]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1358]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1359]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1360]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1361]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1362]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1363]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1364]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1365]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1366]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1367]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1368]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1369]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1370]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1371]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1372]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1373]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1374]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1375]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1376]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1377]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1378]
-WARNING: [Synth 8-3331] design Adder has unconnected port bitshifts[1379]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 439.191 ; gain = 149.379
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 439.617 ; gain = 149.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 439.191 ; gain = 149.379
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 439.617 ; gain = 149.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xcku5p-ffvb676-2-e
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 439.191 ; gain = 149.379
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 439.617 ; gain = 149.691
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:105]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:103]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:99]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:89]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:81]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:69]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:56]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:104]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:100]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:92]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:86]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:74]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:62]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:49]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:50]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:63]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:51]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:52]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:75]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:64]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:53]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:54]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:65]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:55]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:56]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:87]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:76]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:66]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:49]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:50]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:67]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:51]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:52]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:77]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:68]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:53]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:54]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:69]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:55]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:56]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:93]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:88]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:78]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:62]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:49]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:50]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:63]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:51]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:52]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:79]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:64]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:53]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:54]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:65]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:55]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:56]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:89]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:80]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:66]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:49]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:50]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:67]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:51]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:52]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:81]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:68]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:53]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:54]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:69]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:55]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:56]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:101]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:94]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:86]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:74]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:62]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:49]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:50]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:63]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:51]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:52]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:75]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:64]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:53]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:54]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:65]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:55]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:56]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:87]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:76]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:66]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:49]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:50]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:67]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:51]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:52]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:77]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:68]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:53]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v:54]
+INFO: [Common 17-14] Message 'Synth 8-41' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 439.191 ; gain = 149.379
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 439.617 ; gain = 149.691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -151,8 +150,14 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   8 Input     16 Bit       Adders := 2     
-	 181 Input     16 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 2     
+	   2 Input     22 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 8     
+	   2 Input     20 Bit       Adders := 16    
+	   2 Input     19 Bit       Adders := 32    
+	   2 Input     18 Bit       Adders := 64    
+	   2 Input     17 Bit       Adders := 128   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -163,8 +168,14 @@ Hierarchical RTL Component report
 Module Adder 
 Detailed RTL Component Info : 
 +---Adders : 
-	   8 Input     16 Bit       Adders := 2     
-	 181 Input     16 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 2     
+	   2 Input     22 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 8     
+	   2 Input     20 Bit       Adders := 16    
+	   2 Input     19 Bit       Adders := 32    
+	   2 Input     18 Bit       Adders := 64    
+	   2 Input     17 Bit       Adders := 128   
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -182,7 +193,7 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 1212.059 ; gain = 922.246
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1208.199 ; gain = 918.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -195,7 +206,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:54 . Memory (MB): peak = 1212.059 ; gain = 922.246
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1208.199 ; gain = 918.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,7 +218,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -231,7 +242,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -244,7 +255,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -256,25 +267,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -290,42 +301,44 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |CARRY8 |   192|
-|2     |LUT3   |  1438|
-|3     |LUT4   |  1324|
-|4     |LUT5   |    26|
-|5     |LUT6   |   122|
-|6     |IBUF   |  3088|
-|7     |OBUF   |    16|
+|1     |CARRY8 |   765|
+|2     |LUT1   |    64|
+|3     |LUT2   |  4304|
+|4     |LUT3   |    17|
+|5     |LUT4   |    21|
+|6     |LUT5   |     1|
+|7     |LUT6   |     7|
+|8     |IBUF   |  4112|
+|9     |OBUF   |    24|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |  6206|
+|1     |top      |       |  9315|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2049 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
-Synthesis Optimization Complete : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1231.023 ; gain = 941.211
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1209.945 ; gain = 920.020
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3280 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 4877 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'Adder' is not ideal for floorplanning, since the cellview 'Adder' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3088 instances were transformed.
-  IBUF => IBUF (IBUFCTRL, INBUF): 3088 instances
+  A total of 4112 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 4112 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-12 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+112 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:23 . Memory (MB): peak = 1329.781 ; gain = 1052.391
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1333.598 ; gain = 1056.543
 INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.runs/synth_1/Adder.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Adder_utilization_synth.rpt -pb Adder_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1330.125 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 17 17:32:32 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.420 . Memory (MB): peak = 1336.074 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 20 11:38:39 2024...

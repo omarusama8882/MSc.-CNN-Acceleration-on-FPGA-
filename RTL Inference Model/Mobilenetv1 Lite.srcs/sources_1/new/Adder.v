@@ -1,52 +1,59 @@
 module Adder(
-input  signed [0:4095] bitshifts,
-input signed[7:-8] bias,
-output signed[15:-8] result
+input  signed [0:4095] values,
+input signed[15:0] bias,
+output signed[23:0] result
 );
 
-wire signed[7:-8] values [0:255];
-wire signed[8:-8] level1[0:127];
-wire signed[9:-8] level2[0:63];
-wire signed[10:-8] level3[0:31];
-wire signed[11:-8] level4[0:15];
-wire signed[12:-8] level5[0:7];
-wire signed[13:-8] level6[0:3];
-wire signed[14:-8] level7[0:1];
-wire signed[15:-8] level8;
+//wire signed[7:-8] values [0:255];
+wire signed[16:0] level1[0:127];
+wire signed[17:0] level2[0:63];
+wire signed[18:0] level3[0:31];
+wire signed[19:0] level4[0:15];
+wire signed[20:0] level5[0:7];
+wire signed[21:0] level6[0:3];
+wire signed[22:0] level7[0:1];
+wire signed[23:0] level8;
 
 genvar i;
-generate
+//generate
 //for(i=0;i<256;i=i+1) begin:load
 //assign values[i]=bitshifts[16*i:16*i+15];
 //end
 //endgenerate
-for(i=0;i<32;i=i+1) begin:load
-assign values[8*i]=bitshifts[8*16*i:8*16*i+15];
-assign values[8*i+1]=bitshifts[8*16*i+16:8*16*i+31];
-assign values[8*i+2]=bitshifts[8*16*i+32:8*16*i+47];
-assign values[8*i+3]=bitshifts[8*16*i+48:8*16*i+63];
-assign values[8*i+4]=bitshifts[8*16*i+64:8*16*i+79];
-assign values[8*i+5]=bitshifts[8*16*i+80:8*16*i+95];
-assign values[8*i+6]=bitshifts[8*16*i+96:8*16*i+111];
-assign values[8*i+7]=bitshifts[8*16*i+112:8*16*i+127];
+//for(i=0;i<32;i=i+1) begin:load
+//assign values[8*i]=bitshifts[8*16*i:8*16*i+15];
+//assign values[8*i+1]=bitshifts[8*16*i+16:8*16*i+31];
+//assign values[8*i+2]=bitshifts[8*16*i+32:8*16*i+47];
+//assign values[8*i+3]=bitshifts[8*16*i+48:8*16*i+63];
+//assign values[8*i+4]=bitshifts[8*16*i+64:8*16*i+79];
+//assign values[8*i+5]=bitshifts[8*16*i+80:8*16*i+95];
+//assign values[8*i+6]=bitshifts[8*16*i+96:8*16*i+111];
+//assign values[8*i+7]=bitshifts[8*16*i+112:8*16*i+127];
+//end 
+//endgenerate
 
-
-
-
-
-
-end 
-endgenerate
+//generate
+//for(i=0;i<16;i=i+1) begin:level1loop
+//assign level1[8*i]=values[8*2*i]+values[8*2*i+1];
+//assign level1[8*i+1]=values[8*2*i+2]+values[8*2*i+3];
+//assign level1[8*i+2]=values[8*2*i+4]+values[8*2*i+5];
+//assign level1[8*i+3]=values[8*2*i+6]+values[8*2*i+7];
+//assign level1[8*i+4]=values[8*2*i+8]+values[8*2*i+9];
+//assign level1[8*i+5]=values[8*2*i+10]+values[8*2*i+11];
+//assign level1[8*i+6]=values[8*2*i+12]+values[8*2*i+13];
+//assign level1[8*i+7]=values[8*2*i+14]+values[8*2*i+15];
+//end
+//endgenerate
 generate
 for(i=0;i<16;i=i+1) begin:level1loop
-assign level1[8*i]=values[8*2*i]+values[8*2*i+1];
-assign level1[8*i+1]=values[8*2*i+2]+values[8*2*i+3];
-assign level1[8*i+2]=values[8*2*i+4]+values[8*2*i+5];
-assign level1[8*i+3]=values[8*2*i+6]+values[8*2*i+7];
-assign level1[8*i+4]=values[8*2*i+8]+values[8*2*i+9];
-assign level1[8*i+5]=values[8*2*i+10]+values[8*2*i+11];
-assign level1[8*i+6]=values[8*2*i+12]+values[8*2*i+13];
-assign level1[8*i+7]=values[8*2*i+14]+values[8*2*i+15];
+assign level1[8*i]=values[16*16*i:16*16*i+15]+values[16*16*i+16:16*16*i+31];
+assign level1[8*i+1]=values[16*16*i+32:16*16*i+47]+values[16*16*i+48:16*16*i+63];
+assign level1[8*i+2]=values[16*16*i+64:16*16*i+79]+values[16*16*i+80:16*16*i+95];
+assign level1[8*i+3]=values[16*16*i+96:16*16*i+111]+values[16*16*i+112:16*16*i+127];
+assign level1[8*i+4]=values[16*16*i+128:16*16*i+143]+values[16*16*i+144:16*16*i+159];
+assign level1[8*i+5]=values[16*16*i+160:16*16*i+175]+values[16*16*i+176:16*16*i+191];
+assign level1[8*i+6]=values[16*16*i+192:16*16*i+207]+values[16*16*i+208:16*16*i+223];
+assign level1[8*i+7]=values[16*16*i+224:16*16*i+239]+values[16*16*i+240:16*16*i+255];
 end
 endgenerate
 
