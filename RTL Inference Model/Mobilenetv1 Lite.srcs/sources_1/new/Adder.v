@@ -1,5 +1,5 @@
 module Adder(
-input  signed [0:4095] values,
+input  signed [4095:0] values,
 input signed[15:0] bias,
 output signed[23:0] result
 );
@@ -46,14 +46,14 @@ genvar i;
 //endgenerate
 generate
 for(i=0;i<16;i=i+1) begin:level1loop
-assign level1[8*i]=values[16*16*i:16*16*i+15]+values[16*16*i+16:16*16*i+31];
-assign level1[8*i+1]=values[16*16*i+32:16*16*i+47]+values[16*16*i+48:16*16*i+63];
-assign level1[8*i+2]=values[16*16*i+64:16*16*i+79]+values[16*16*i+80:16*16*i+95];
-assign level1[8*i+3]=values[16*16*i+96:16*16*i+111]+values[16*16*i+112:16*16*i+127];
-assign level1[8*i+4]=values[16*16*i+128:16*16*i+143]+values[16*16*i+144:16*16*i+159];
-assign level1[8*i+5]=values[16*16*i+160:16*16*i+175]+values[16*16*i+176:16*16*i+191];
-assign level1[8*i+6]=values[16*16*i+192:16*16*i+207]+values[16*16*i+208:16*16*i+223];
-assign level1[8*i+7]=values[16*16*i+224:16*16*i+239]+values[16*16*i+240:16*16*i+255];
+assign level1[8*i]=values[16*16*i+:16]+values[16*16*i+16+:16];
+assign level1[8*i+1]=values[16*16*i+32+:16]+values[16*16*i+48+:16];
+assign level1[8*i+2]=values[16*16*i+64+:16]+values[16*16*i+80+:16];
+assign level1[8*i+3]=values[16*16*i+96+:16]+values[16*16*i+112+:16];
+assign level1[8*i+4]=values[16*16*i+128+:16]+values[16*16*i+144+:16];
+assign level1[8*i+5]=values[16*16*i+160+:16]+values[16*16*i+176+:16];
+assign level1[8*i+6]=values[16*16*i+192+:16]+values[16*16*i+208+:16];
+assign level1[8*i+7]=values[16*16*i+224+:16]+values[16*16*i+240+:16];
 end
 endgenerate
 

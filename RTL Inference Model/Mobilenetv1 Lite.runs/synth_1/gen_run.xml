@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1724176273">
+<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1724248532">
   <File Type="PA-TCL" Name="DenseLayer.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="DenseLayer_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="DenseLayer_reports.tcl"/>
@@ -60,6 +60,20 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/DenseAdder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/c_addsub_2_2/c_addsub_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="DenseLayer"/>
@@ -75,5 +89,13 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DenseWeights"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_7"/>
 </GenRun>

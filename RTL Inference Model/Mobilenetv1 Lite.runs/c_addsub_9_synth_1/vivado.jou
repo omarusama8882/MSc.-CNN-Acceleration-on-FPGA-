@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Aug 21 15:30:00 2024
+# Process ID: 656
+# Current directory: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.runs/c_addsub_9_synth_1
+# Command line: vivado.exe -log c_addsub_9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_addsub_9.tcl
+# Log file: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.runs/c_addsub_9_synth_1/c_addsub_9.vds
+# Journal file: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.runs/c_addsub_9_synth_1\vivado.jou
+#-----------------------------------------------------------
+source c_addsub_9.tcl -notrace

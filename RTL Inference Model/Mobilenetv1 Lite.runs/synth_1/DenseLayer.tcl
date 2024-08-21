@@ -16,6 +16,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.notrace 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xcku5p-ffvb676-2-e
 
 set_param project.singleFileAddWarning.threshold 0
@@ -38,9 +40,37 @@ read_verilog -library xil_defaultlib {
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/ReLU.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/ReLU_testbench.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder_testbench.v}
+  {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseAdder.v}
 }
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_2_2/c_addsub_2.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_2_2/c_addsub_2_ooc.xdc}}]
+
 read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/DenseWeights/DenseWeights/DenseWeights.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/DenseWeights/DenseWeights/DenseWeights_ooc.xdc}}]
+
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0_ooc.xdc}}]
+
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_1/c_addsub_1.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_1/c_addsub_1_ooc.xdc}}]
+
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_4/c_addsub_4.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_4/c_addsub_4_ooc.xdc}}]
+
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_5/c_addsub_5.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_5/c_addsub_5_ooc.xdc}}]
+
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_6/c_addsub_6.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_6/c_addsub_6_ooc.xdc}}]
+
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_7_2/c_addsub_7.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_7_2/c_addsub_7_ooc.xdc}}]
+
+read_ip -quiet {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_8_2/c_addsub_8.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_8_2/c_addsub_8_ooc.xdc}}]
+
+read_ip -quiet {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_9/c_addsub_9.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/ip/c_addsub_9/c_addsub_9_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -50,6 +80,8 @@ set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top DenseLayer -part xcku5p-ffvb676-2-e
 

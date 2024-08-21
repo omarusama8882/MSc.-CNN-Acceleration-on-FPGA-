@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Aug 20 19:56:07 2024
+| Date         : Wed Aug 21 16:02:05 2024
 | Host         : DESKTOP-E0RJCTD running 64-bit major release  (build 9200)
 | Command      : report_utilization -file DenseLayer_utilization_synth.rpt -pb DenseLayer_utilization_synth.pb
 | Design       : DenseLayer
@@ -31,14 +31,14 @@ Table of Contents
 +-------------------------+-------+-------+-----------+-------+
 |        Site Type        |  Used | Fixed | Available | Util% |
 +-------------------------+-------+-------+-----------+-------+
-| CLB LUTs*               | 16287 |     0 |    216960 |  7.51 |
-|   LUT as Logic          | 16287 |     0 |    216960 |  7.51 |
+| CLB LUTs*               | 15647 |     0 |    216960 |  7.21 |
+|   LUT as Logic          | 15647 |     0 |    216960 |  7.21 |
 |   LUT as Memory         |     0 |     0 |     99840 |  0.00 |
-| CLB Registers           |   198 |     0 |    433920 |  0.05 |
-|   Register as Flip Flop |   198 |     0 |    433920 |  0.05 |
+| CLB Registers           |   154 |     0 |    433920 |  0.04 |
+|   Register as Flip Flop |   154 |     0 |    433920 |  0.04 |
 |   Register as Latch     |     0 |     0 |    433920 |  0.00 |
-| CARRY8                  |   685 |     0 |     27120 |  2.53 |
-| F7 Muxes                |   290 |     0 |    108480 |  0.27 |
+| CARRY8                  |     7 |     0 |     27120 |  0.03 |
+| F7 Muxes                |   148 |     0 |    108480 |  0.14 |
 | F8 Muxes                |     0 |     0 |     54240 |  0.00 |
 | F9 Muxes                |     0 |     0 |     27120 |  0.00 |
 +-------------------------+-------+-------+-----------+-------+
@@ -60,7 +60,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 198   |          Yes |       Reset |            - |
+| 154   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -94,7 +94,7 @@ Table of Contents
 +------------+------+-------+-----------+---------+
 |  Site Type | Used | Fixed | Available |  Util%  |
 +------------+------+-------+-----------+---------+
-| Bonded IOB | 4194 |     0 |       280 | 1497.86 |
+| Bonded IOB | 3938 |     0 |       280 | 1406.43 |
 +------------+------+-------+-----------+---------+
 
 
@@ -153,18 +153,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     | 9135 |                 CLB |
-| INBUF    | 4098 |                 I/O |
-| IBUFCTRL | 4098 |              Others |
-| LUT5     | 3327 |                 CLB |
-| LUT2     | 3301 |                 CLB |
-| LUT4     |  894 |                 CLB |
-| LUT3     |  794 |                 CLB |
-| CARRY8   |  685 |                 CLB |
-| MUXF7    |  290 |                 CLB |
-| FDRE     |  198 |            Register |
+| LUT6     | 8820 |                 CLB |
+| LUT3     | 4633 |                 CLB |
+| INBUF    | 3842 |                 I/O |
+| IBUFCTRL | 3842 |              Others |
+| LUT5     | 2865 |                 CLB |
+| LUT4     | 1062 |                 CLB |
+| LUT2     |  209 |                 CLB |
+| FDRE     |  154 |            Register |
+| MUXF7    |  148 |                 CLB |
 | OBUF     |   96 |                 I/O |
-| LUT1     |   81 |                 CLB |
+| LUT1     |   19 |                 CLB |
+| CARRY8   |    7 |                 CLB |
 | BUFGCE   |    1 |               Clock |
 +----------+------+---------------------+
 
@@ -172,9 +172,19 @@ Table of Contents
 9. Black Boxes
 --------------
 
-+----------+------+
-| Ref Name | Used |
-+----------+------+
++------------+------+
+|  Ref Name  | Used |
++------------+------+
+| c_addsub_0 |  128 |
+| c_addsub_1 |   64 |
+| c_addsub_2 |   32 |
+| c_addsub_4 |   16 |
+| c_addsub_5 |    8 |
+| c_addsub_6 |    4 |
+| c_addsub_7 |    2 |
+| c_addsub_9 |    1 |
+| c_addsub_8 |    1 |
++------------+------+
 
 
 10. Instantiated Netlists
