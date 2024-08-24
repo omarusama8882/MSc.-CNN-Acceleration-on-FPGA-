@@ -4,13 +4,14 @@ input rst,
 input signed [4095:0]  inputs, 
 output reg  signed[95:0]  outputs
 );
-
+integer j;
 parameter file1="C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/denseweights.txt";
 parameter file2="C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/dense_biases.txt";
 
 reg signed [3:0]  memory[0:1023];
 reg signed [3:0]  bias  [0:3];
 wire signed [4095:0]  bitshifted;
+reg signed [3:0] currmem[0:255];
 //wire signed [7:-8] inputs[0:255];
 //reg signed [23:0] out_put[0:3];
 wire [23:0] currResult;
@@ -42,82 +43,82 @@ generate
 for(i=0;i<16;i=i+1) begin:bitshiftloop
 Bitshift bs1(
 .unshifted(inputs[16*16*i+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i]),
+.ShiftValueAndSign(currmem[16*i]),
 .shifted(bitshifted[16*16*i+:16])
 );
 Bitshift bs2(
 .unshifted(inputs[16*16*i+16+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+1]),
+.ShiftValueAndSign(currmem[16*i+1]),
 .shifted(bitshifted[16*16*i+16+:16])
 );
 Bitshift bs3(
 .unshifted(inputs[16*16*i+32+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+2]),
+.ShiftValueAndSign(currmem[16*i+2]),
 .shifted(bitshifted[16*16*i+32+:16])
 );
 Bitshift bs4(
 .unshifted(inputs[16*16*i+48+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+3]),
+.ShiftValueAndSign(currmem[16*i+3]),
 .shifted(bitshifted[16*16*i+48+:16])
 );
 Bitshift bs5(
 .unshifted(inputs[16*16*i+64+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+4]),
+.ShiftValueAndSign(currmem[16*i+4]),
 .shifted(bitshifted[16*16*i+64+:16])
 );
 Bitshift bs6(
 .unshifted(inputs[16*16*i+80+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+5]),
+.ShiftValueAndSign(currmem[16*i+5]),
 .shifted(bitshifted[16*16*i+80+:16])
 );
 Bitshift bs7(
 .unshifted(inputs[16*16*i+96+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+6]),
+.ShiftValueAndSign(currmem[16*i+6]),
 .shifted(bitshifted[16*16*i+96+:16])
 );
 Bitshift bs8(
 .unshifted(inputs[16*16*i+112+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+7]),
+.ShiftValueAndSign(currmem[16*i+7]),
 .shifted(bitshifted[16*16*i+112+:16])
 );
 Bitshift bs9(
 .unshifted(inputs[16*16*i+128+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+8]),
+.ShiftValueAndSign(currmem[16*i+8]),
 .shifted(bitshifted[16*16*i+128+:16])
 );
 Bitshift bs10(
 .unshifted(inputs[16*16*i+144+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+9]),
+.ShiftValueAndSign(currmem[16*i+9]),
 .shifted(bitshifted[16*16*i+144+:16])
 );
 Bitshift bs11(
 .unshifted(inputs[16*16*i+160+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+10]),
+.ShiftValueAndSign(currmem[16*i+10]),
 .shifted(bitshifted[16*16*i+160+:16])
 );
 Bitshift bs12(
 .unshifted(inputs[16*16*i+176+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+11]),
+.ShiftValueAndSign(currmem[16*i+11]),
 .shifted(bitshifted[16*16*i+176+:16])
 );
 Bitshift bs13(
 .unshifted(inputs[16*16*i+192+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+12]),
+.ShiftValueAndSign(currmem[16*i+12]),
 .shifted(bitshifted[16*16*i+192+:16])
 );
 Bitshift bs14(
 .unshifted(inputs[16*16*i+208+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+13]),
+.ShiftValueAndSign(currmem[16*i+13]),
 .shifted(bitshifted[16*16*i+208+:16])
 );
 Bitshift bs15(
 .unshifted(inputs[16*16*i+224+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+14]),
+.ShiftValueAndSign(currmem[16*i+14]),
 .shifted(bitshifted[16*16*i+224+:16])
 );
 Bitshift bs16(
 .unshifted(inputs[16*16*i+240+:16]),
-.ShiftValueAndSign(memory[nodecounter+16*i+15]),
+.ShiftValueAndSign(currmem[16*i+15]),
 .shifted(bitshifted[16*16*i+240+:16])
 );
 end
@@ -150,10 +151,15 @@ output_counter<=output_counter+1;
 outputs[output_counter*24+:24]<=currResult;
 end
 
+
 //end
 //clkcounter=0;
 
 end
-
+always@(posedge clk) begin
+for(j=0;j<256;j=j+1) begin
+currmem[j]=memory[nodecounter+j];
+end
+end
 
 endmodule
