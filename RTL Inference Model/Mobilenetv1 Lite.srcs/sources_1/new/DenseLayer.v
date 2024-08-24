@@ -122,9 +122,8 @@ Bitshift bs16(
 );
 end
 endgenerate
-DenseAdder add(
+Adder add(
 .values(bitshifted),
-.clk(clk),
 .bias(bias[output_counter]),
 .result(currResult)
 );
@@ -148,11 +147,12 @@ end
 else if(nodecounter<1024) begin
 nodecounter<=nodecounter+256;
 output_counter<=output_counter+1;
-outputs[output_counter*24+:24]=currResult;
+outputs[output_counter*24+:24]<=currResult;
+end
 
 //end
 //clkcounter=0;
-end
+
 end
 
 

@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/DenseAdder.v,1724517066,verilog,,C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder_testbench.v,,DenseAdder,,,,,,,,
+C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder.v,1724511825,verilog,,C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Bitshift.v,,Adder,,,,,,,,
+C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder_testbench.v,1724515995,verilog,,,,Adder_testbench,,,,,,,,

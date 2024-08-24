@@ -3,7 +3,7 @@ module Adder_testbench;
 reg  signed [0:4095] bitshifts;
 reg signed[15:0] bias;
 wire signed[23:0] result;
-Adder uut(
+DenseAdder uut(
 .values(bitshifts),
 .bias(bias),
 .result(result)
@@ -32,12 +32,12 @@ $display("%f",$itor(result*SF));
 
 end
 //always @(uut.level1) begin
-    //$display("Time: %0d | level1 values:", $time);
-    //for (i = 0; i < 128; i = i + 1) begin
-     //   $display("level1[%0d] = %0f", i, uut.level1[i]*SF);
-   // end
+   //$display("Time: %0d | level1 values:", $time);
+    //for (i = 0; i < 64; i = i + 1) begin
+    //    $display("level1[%0d] = %0f", i, uut.level1[i]*SF);
+  //  end
 //end
-//always @(uut.level3) begin
+//always @(uut.level2) begin
   //  $display("Time: %0d | level2 values:", $time);
     //for (i = 0; i < 64; i = i + 1) begin
       //  $display("level2[%0d] = %0f", i, uut.level2[i]*SF);

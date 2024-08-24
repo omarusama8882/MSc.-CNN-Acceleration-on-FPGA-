@@ -9,10 +9,10 @@ wire signed[16:0] level1[0:127];
 wire signed[17:0] level2[0:63];
 wire signed[18:0] level3[0:31];
 wire signed[19:0] level4[0:15];
-wire signed[20:0] level5[0:7];
-wire signed[21:0] level6[0:3];
-wire signed[22:0] level7[0:1];
-wire signed[23:0] level8;
+//wire signed[20:0] level5[0:7];
+//wire signed[21:0] level6[0:3];
+//wire signed[22:0] level7[0:1];
+//wire signed[23:0] level8;
 
 genvar i;
 //generate
@@ -89,21 +89,21 @@ assign level4[4*i+2]=level3[4*2*i+4]+level3[4*2*i+5];
 assign level4[4*i+3]=level3[4*2*i+6]+level3[4*2*i+7];
 end
 endgenerate
-assign level5[0]=level4[0]+level4[1];
-assign level5[1]=level4[2]+level4[3];
-assign level5[2]=level4[4]+level4[5];
-assign level5[3]=level4[6]+level4[7];
-assign level5[4]=level4[8]+level4[9];
-assign level5[5]=level4[10]+level4[11];
-assign level5[6]=level4[12]+level4[13];
-assign level5[7]=level4[14]+level4[15];
-assign level6[0]=level5[0]+level5[1];
-assign level6[1]=level5[2]+level5[3];
-assign level6[2]=level5[4]+level5[5];
-assign level6[3]=level5[6]+level5[7];
-assign level7[0]=level6[0]+level6[1];
-assign level7[1]=level6[2]+level6[3];
-assign level8=level7[0]+level7[1];
-assign result=level8+bias;
+//assign level5[0]=level4[0]+level4[1];
+//assign level5[1]=level4[2]+level4[3];
+//assign level5[2]=level4[4]+level4[5];
+//assign level5[3]=level4[6]+level4[7];
+//assign level5[4]=level4[8]+level4[9];
+//assign level5[5]=level4[10]+level4[11];
+//assign level5[6]=level4[12]+level4[13];
+//assign level5[7]=level4[14]+level4[15];
+//assign level6[0]=level5[0]+level5[1];
+//assign level6[1]=level5[2]+level5[3];
+//assign level6[2]=level5[4]+level5[5];
+//assign level6[3]=level5[6]+level5[7];
+//assign level7[0]=level6[0]+level6[1];
+//assign level7[1]=level6[2]+level6[3];
+//assign level8=level7[0]+level7[1];
+assign result=level4[0]+level4[1]+level4[2]+level4[3]+level4[4]+level4[5]+level4[6]+level4[7]+level4[8]+level4[9]+level4[10]+level4[11]+level4[12]+level4[13]+level4[14]+level4[15]+bias;
 
 endmodule
