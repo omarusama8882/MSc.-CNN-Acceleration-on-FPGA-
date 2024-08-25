@@ -5,7 +5,7 @@ input signed [4095:0]  inputs,
 output reg  signed[95:0]  outputs
 );
 integer j;
-parameter file1="C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/denseweights.txt";
+parameter file1="C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/try.txt";
 parameter file2="C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/dense_biases.txt";
 
 reg signed [3:0]  memory[0:1023];
@@ -16,16 +16,18 @@ reg signed [3:0] currmem[0:255];
 //reg signed [23:0] out_put[0:3];
 wire [23:0] currResult;
 reg signed [3:0] weights[0:255];
-integer clkcounter=0;
+integer clkcounter;
 integer nodecounter;
 integer output_counter;
 initial begin
 $readmemh(file1,memory);
 $readmemh(file2,bias);
 nodecounter=0;
+clkcounter=0;
 output_counter=0;
 end
 genvar i;
+
 //generate
 //for(i=0;i<32;i=i+1) begin:load
 //assign inputs[8*i]=fc_inputs[8*16*i:8*16*i+15];
@@ -41,6 +43,16 @@ genvar i;
 //endgenerate
 generate
 for(i=0;i<16;i=i+1) begin:bitshiftloop
+/*
+Bitshift bs1(
+.unshifted(inputs[16*i+:16]),
+.ShiftValueAndSign(currmem[16*i]),
+.shifted(bitshifted[16*i+:16])
+);
+*/
+
+
+
 Bitshift bs1(
 .unshifted(inputs[16*16*i+:16]),
 .ShiftValueAndSign(currmem[16*i]),
@@ -121,6 +133,7 @@ Bitshift bs16(
 .ShiftValueAndSign(currmem[16*i+15]),
 .shifted(bitshifted[16*16*i+240+:16])
 );
+
 end
 endgenerate
 Adder add(
@@ -146,9 +159,15 @@ end
 //end
 //else begin
 else if(nodecounter<1024) begin
+if(clkcounter<16) begin
+clkcounter=clkcounter+1;
+end 
+else begin
 nodecounter<=nodecounter+256;
 output_counter<=output_counter+1;
 outputs[output_counter*24+:24]<=currResult;
+clkcounter=0;
+end
 end
 
 

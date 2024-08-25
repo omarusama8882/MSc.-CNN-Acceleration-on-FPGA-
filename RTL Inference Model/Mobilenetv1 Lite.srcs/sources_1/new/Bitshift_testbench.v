@@ -1,20 +1,20 @@
 `timescale 1ns / 1ps
 module Bitshift_testbench;
-reg [7:-8] unshifted ;
+reg [15:0] unshifted ;
 reg [3:0] ShiftValueAndSign ;
-wire [7:-8] shifted ;
-wire neg;
+wire [15:0] shifted ;
+
 localparam SF=2.0**-8.0;
 Bitshift uut (
 . unshifted ( unshifted ) ,
 . ShiftValueAndSign ( ShiftValueAndSign ),
-. shifted ( shifted ),
-.neg(neg)
+. shifted ( shifted )
+
 );
 initial begin
 unshifted = 16'b0000011000000000 ;
 ShiftValueAndSign = 4'b0010;
-
+$display("unshifted=%f",$itor(unshifted*SF));
 #5 ShiftValueAndSign = 4'b1110;
 $display("%f",$itor(shifted*SF));
 
@@ -28,6 +28,8 @@ $display("%f",$itor(shifted*SF));
 unshifted=16'b1111111100000000;
 ShiftValueAndSign = 4'b0010;
 $display("%f",$itor(shifted*SF));
+$display("unshifted=%f",$itor(unshifted*SF));
+
 #5
 ShiftValueAndSign = 4'b1110;
 $display("%f",$itor(shifted*SF));

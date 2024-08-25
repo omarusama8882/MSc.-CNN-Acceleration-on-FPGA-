@@ -26,13 +26,14 @@ always@(uut.bitshifted) begin
 $display("Time: %0d | level1 values:", $time);
 
 for (i = 0; i < 256; i = i + 1) begin
-$display("bitshift[%d]=%f",i, uut.bitshifted[256*i+:256]*SF);
+$display("bitshift[%d]=%f",i, uut.bitshifted[16*i+:16]*SF);
 
 end
 
 
 
 end
+
 always@(uut.currmem) begin
 $display("Time: %0d | level1 values:", $time);
 
@@ -45,5 +46,6 @@ always@(uut.currResult) begin
 $display("Time: %0d | level1 values:", $time);
 $display("currResult=%f", uut.currResult*SF);
 end
+
 endmodule
 
