@@ -1,6 +1,6 @@
 module DenseAdder(
 input  signed [4095:0] values,
-input signed[15:0] bias,
+input signed[3:0] bias,
 output signed[23:0] result
 );
 wire signed[17:0] level1[0:63];

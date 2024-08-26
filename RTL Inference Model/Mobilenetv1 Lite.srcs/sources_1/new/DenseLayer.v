@@ -12,18 +12,21 @@ reg signed [3:0]  memory[0:1023];
 reg signed [3:0]  bias  [0:3];
 wire signed [4095:0]  bitshifted;
 reg signed [3:0] currmem[0:255];
+reg signed [3:0] currbias;
 //wire signed [7:-8] inputs[0:255];
 //reg signed [23:0] out_put[0:3];
 wire [23:0] currResult;
+
 reg signed [3:0] weights[0:255];
-integer clkcounter;
+
+//integer clkcounter;
 integer nodecounter;
 integer output_counter;
 initial begin
 $readmemh(file1,memory);
 $readmemh(file2,bias);
 nodecounter=0;
-clkcounter=0;
+//clkcounter=0;
 output_counter=0;
 end
 genvar i;
@@ -41,10 +44,11 @@ genvar i;
 //end 
 
 //endgenerate
+
+
 generate
 for(i=0;i<16;i=i+1) begin:bitshiftloop
-/*
-Bitshift bs1(
+/*Bitshift bs1(
 .unshifted(inputs[16*i+:16]),
 .ShiftValueAndSign(currmem[16*i]),
 .shifted(bitshifted[16*i+:16])
@@ -135,12 +139,15 @@ Bitshift bs16(
 );
 
 end
+
 endgenerate
-Adder add(
+
+DenseAdder add(
 .values(bitshifted),
-.bias(bias[output_counter]),
+.bias(currbias),
 .result(currResult)
 );
+
 //assign outputs[0:23]=out_put[0]; 
 //assign outputs[24:47]=out_put[1];
 //assign outputs[48:61]=out_put[2];
@@ -158,15 +165,12 @@ end
 //clkcounter=clkcounter+1;
 //end
 //else begin
-else if(nodecounter<1024) begin
-if(clkcounter<16) begin
-clkcounter=clkcounter+1;
-end 
-else begin
+else if(output_counter<5) begin
+ 
+
 nodecounter<=nodecounter+256;
 output_counter<=output_counter+1;
-outputs[output_counter*24+:24]<=currResult;
-clkcounter=0;
+
 end
 end
 
@@ -174,11 +178,17 @@ end
 //end
 //clkcounter=0;
 
-end
+
 always@(posedge clk) begin
 for(j=0;j<256;j=j+1) begin
 currmem[j]=memory[nodecounter+j];
+
 end
+currbias=bias[output_counter];
 end
 
+always@(posedge clk) begin
+outputs[(output_counter-1)*24+:24]<=currResult;
+
+end
 endmodule
