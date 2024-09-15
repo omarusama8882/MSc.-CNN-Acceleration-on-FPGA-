@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/Bitshift_testbench_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Aug 25 14:45:05 2024" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Sep 15 20:44:24 2024" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "2d37abd8-7f93-4582-b19b-0abfc97720a0" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "78145c9cf66a4f4a8a19b51f07f00df7" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "4" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "43" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "us
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "0 ps" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.09_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7840_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1500060024 -regid "" -xml C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/Bitshift_testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/Bitshift_testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/Bitshift_testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Memory -value "8120_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 413667179 -regid "" -xml C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/Bitshift_testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/Bitshift_testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.sim/sim_1/behav/xsim/xsim.dir/Bitshift_testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

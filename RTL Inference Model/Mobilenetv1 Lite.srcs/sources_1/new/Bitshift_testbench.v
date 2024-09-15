@@ -2,14 +2,13 @@
 module Bitshift_testbench;
 reg [15:0] unshifted ;
 reg [3:0] ShiftValueAndSign ;
-wire [15:0] shifted ;
+wire [22:0] shifted ;
 
 localparam SF=2.0**-8.0;
 Bitshift uut (
 . unshifted ( unshifted ) ,
 . ShiftValueAndSign ( ShiftValueAndSign ),
 . shifted ( shifted )
-
 );
 initial begin
 unshifted = 16'b0000011000000000 ;
@@ -47,7 +46,13 @@ $display("%f",$itor(shifted*SF));
 $display("unshifted=%f",$itor(unshifted*SF));
 
 #5
+unshifted=16'b0111111100000000;
+ShiftValueAndSign=4'b0011;
 $display("shifted=%f",$itor(shifted*SF));
+$display("unshifted=%f",$itor(unshifted*SF));
+#5
+$display("shifted=%f",$itor(shifted*SF));
+
 
 
 

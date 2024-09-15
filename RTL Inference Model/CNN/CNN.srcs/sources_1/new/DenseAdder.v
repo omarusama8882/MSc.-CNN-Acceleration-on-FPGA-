@@ -6,6 +6,8 @@ output signed[23:0] result
 wire signed[17:0] level1[0:63];
 wire signed[19:0] level2[0:15];
 wire signed[21:0]level3;
+wire signed [15:0] adjustedBias;
+assign adjustedBias={4'b0000,bias,8'b00000000};
 genvar i;
 generate
 for(i=0;i<16;i=i+1) begin:l1
@@ -24,7 +26,7 @@ assign level2[4*i+3]=level1[16*i+12]+level1[16*i+13]+level1[16*i+14]+level1[16*i
 end
 endgenerate
 assign level3=level2[0]+level2[1]+level2[2]+level2[3]+level2[4]+level2[5]+level2[6]+level2[7];
-assign result=level3+level2[8]+level2[9]+level2[10]+level2[11]+level2[12]+level2[13]+level2[14]+level2[15]+bias;
+assign result=level3+level2[8]+level2[9]+level2[10]+level2[11]+level2[12]+level2[13]+level2[14]+level2[15]+adjustedBias;
 
 
 endmodule
