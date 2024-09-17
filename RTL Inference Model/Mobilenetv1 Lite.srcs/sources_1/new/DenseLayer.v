@@ -2,7 +2,7 @@ module DenseLayer(
 input clk,
 input rst,
 input signed [4095:0]  inputs, 
-output reg  signed[95:0]  outputs
+output reg  signed[119:0]  outputs
 );
 integer j;
 parameter file1="C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/denseweights.txt";
@@ -15,7 +15,7 @@ reg signed [3:0] currmem[0:255];
 reg signed [3:0] currbias;
 //wire signed [7:-8] inputs[0:255];
 //reg signed [23:0] out_put[0:3];
-wire [23:0] currResult;
+wire [29:0] currResult;
 
 reg signed [3:0] weights[0:255];
 
@@ -139,7 +139,7 @@ end
 
 endgenerate
 
-DenseAdder add(
+Adder22 add(
 .values(bitshifted),
 .bias(currbias),
 .result(currResult)
@@ -185,7 +185,7 @@ currbias=bias[output_counter];
 end
 
 always@(posedge clk) begin
-outputs[(output_counter-1)*24+:24]<=currResult;
+outputs[(output_counter-1)*30+:30]<=currResult;
 
 end
 endmodule

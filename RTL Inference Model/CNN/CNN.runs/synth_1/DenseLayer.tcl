@@ -38,6 +38,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/DenseLayer_testbench.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Neuron.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Neuron_testbench.v}
+  {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,10 +49,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top Bitshift -part xcku5p-ffvb676-2-e
+synth_design -top DenseLayer -part xcku5p-ffvb676-2-e
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Bitshift.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Bitshift_utilization_synth.rpt -pb Bitshift_utilization_synth.pb"
+write_checkpoint -force -noxdef DenseLayer.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file DenseLayer_utilization_synth.rpt -pb DenseLayer_utilization_synth.pb"

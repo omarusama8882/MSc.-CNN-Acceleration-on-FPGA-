@@ -779,7 +779,7 @@ Time: 5 | level1 values:
 508.000000
 254.000000
 Time: 5 | Result values:
-currResult=15402.183594
+currResult=73259.156250
 Time: 5 | outputcounter values:
 outputcounter=          1
 Time: 15 | level1 values:
@@ -1297,11 +1297,11 @@ Time: 15 | level1 values:
 31.750000
 254.000000
 Time: 15 | Result values:
-currResult=2096.320312
+currResult=90358.515625
 Time: 15 | outputcounter values:
 outputcounter=          2
 Time: 15 | outputs:
-outputs[          0]=15402.183594
+outputs[          0]=73259.156250
 outputs[          1]=0.000000
 outputs[          2]=0.000000
 outputs[          3]=0.000000
@@ -1563,7 +1563,7 @@ mem[        253]=  0
 mem[        254]= -3
 mem[        255]= -1
 Time: 25 | Result values:
-currResult=2097.320312
+currResult=90359.515625
 Time: 25 | level1 values:
 127.000000
 254.000000
@@ -1822,12 +1822,12 @@ Time: 25 | level1 values:
 15.875000
 63.500000
 Time: 25 | Result values:
-currResult=16257.718750
+currResult=78342.140625
 Time: 25 | outputcounter values:
 outputcounter=          3
 Time: 25 | outputs:
-outputs[          0]=15402.183594
-outputs[          1]=2096.320312
+outputs[          0]=73259.156250
+outputs[          1]=90358.515625
 outputs[          2]=0.000000
 outputs[          3]=0.000000
 Time: 35 | level1 values:
@@ -2088,7 +2088,7 @@ mem[        253]= -3
 mem[        254]= -1
 mem[        255]=  0
 Time: 35 | Result values:
-currResult=16256.718750
+currResult=78341.140625
 Time: 35 | level1 values:
 508.000000
 63.500000
@@ -2347,13 +2347,13 @@ Time: 35 | level1 values:
 63.500000
 127.000000
 Time: 35 | Result values:
-currResult=2540.472656
+currResult=85907.562500
 Time: 35 | outputcounter values:
 outputcounter=          4
 Time: 35 | outputs:
-outputs[          0]=15402.183594
-outputs[          1]=2096.320312
-outputs[          2]=16257.718750
+outputs[          0]=73259.156250
+outputs[          1]=90358.515625
+outputs[          2]=78342.140625
 outputs[          3]=0.000000
 Time: 45 | level1 values:
 mem[          0]=  x
@@ -2874,7 +2874,7 @@ Time: 45 | level1 values:
 Time: 45 | outputcounter values:
 outputcounter=          5
 Time: 45 | outputs:
-outputs[          0]=15402.183594
-outputs[          1]=2096.320312
-outputs[          2]=16257.718750
-outputs[          3]=2540.472656
+outputs[          0]=73259.156250
+outputs[          1]=90358.515625
+outputs[          2]=78342.140625
+outputs[          3]=85907.562500

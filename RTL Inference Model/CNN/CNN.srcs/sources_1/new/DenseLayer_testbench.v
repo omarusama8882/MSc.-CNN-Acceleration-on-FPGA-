@@ -5,7 +5,7 @@ module DenseLayer_testbench;
 reg signed [4095:0]  inputs;
 reg clk;
 reg rst;
-wire signed[95:0]  outputs;
+wire signed[119:0]  outputs;
 DenseLayer uut(
 .inputs(inputs),
 .clk(clk),
@@ -41,7 +41,7 @@ always@(outputs) begin
 $display("Time: %0d | outputs:", $time);
 
 for (i = 0; i < 4; i = i + 1) begin
-$display("outputs[%d]=%f",i, outputs[24*i+:24]*SF);
+$display("outputs[%d]=%f",i, outputs[30*i+:30]*SF);
 end
 end
 always@(uut.bitshifted) begin
