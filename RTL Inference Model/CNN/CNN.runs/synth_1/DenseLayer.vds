@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Sep 17 12:54:50 2024
-# Process ID: 8040
+# Start of session at: Wed Sep 18 16:46:42 2024
+# Process ID: 9480
 # Current directory: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1
 # Command line: vivado.exe -log DenseLayer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DenseLayer.tcl
 # Log file: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1/DenseLayer.vds
@@ -15,157 +15,159 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12660 
+INFO: Helper process launched with PID 5572 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 387.973 ; gain = 98.348
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 387.117 ; gain = 97.164
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DenseLayer' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:1]
 	Parameter file1 bound to: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/denseweights.txt - type: string 
 	Parameter file2 bound to: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/dense_biases.txt - type: string 
-INFO: [Synth 8-3876] $readmem data file 'C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/denseweights.txt' is read successfully [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:26]
-INFO: [Synth 8-3876] $readmem data file 'C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/dense_biases.txt' is read successfully [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:27]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/denseweights.txt' is read successfully [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:28]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Neural Network Parameters/dense_biases.txt' is read successfully [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:29]
 INFO: [Synth 8-638] synthesizing module 'Bitshift' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Bitshift.v:1]
 INFO: [Synth 8-256] done synthesizing module 'Bitshift' (1#1) [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Bitshift.v:1]
 INFO: [Synth 8-638] synthesizing module 'Adder22' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:1]
 INFO: [Synth 8-256] done synthesizing module 'Adder22' (2#1) [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:1]
-WARNING: [Synth 8-689] width (24) of port connection 'result' does not match port width (30) of module 'Adder22' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:145]
-INFO: [Synth 8-256] done synthesizing module 'DenseLayer' (3#1) [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:1]
+INFO: [Synth 8-638] synthesizing module 'Argmax' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax.v:1]
+WARNING: [Synth 8-567] referenced signal 'start' should be on the sensitivity list [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Argmax' (3#1) [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax.v:1]
+WARNING: [Synth 8-6014] Unused sequential element finish_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:181]
+INFO: [Synth 8-256] done synthesizing module 'DenseLayer' (4#1) [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:1]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 652.902 ; gain = 363.277
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 652.582 ; gain = 362.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 652.902 ; gain = 363.277
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 652.582 ; gain = 362.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xcku5p-ffvb676-2-e
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 652.902 ; gain = 363.277
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 652.582 ; gain = 362.629
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:28]
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:28]
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:28]
 INFO: [Synth 8-5544] ROM "bias" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-WARNING: [Synth 8-6040] Register Àôë»þ driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[0] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[1] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[2] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[3] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[4] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[5] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[6] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[7] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[8] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[9] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[10] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[11] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[12] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[13] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[14] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[15] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[16] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[17] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[18] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[19] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[20] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[21] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[22] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[23] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[24] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[25] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[26] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[27] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[28] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[29] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[30] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[31] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[32] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[33] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[34] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[35] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[36] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[37] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[38] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[39] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[40] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[41] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[42] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[43] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[44] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[45] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[46] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[47] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[48] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[49] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[50] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[51] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[52] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[53] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[54] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[55] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[56] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[57] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[58] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[59] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[60] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[61] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[62] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[63] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[64] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[65] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[66] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[67] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[68] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[69] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[70] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[71] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[72] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[73] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[74] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[75] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[76] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[77] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[78] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[79] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[80] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[81] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[82] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[83] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[84] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[85] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[86] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[87] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[88] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[89] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[90] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[91] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[92] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[93] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[94] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[95] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[96] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[97] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[98] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
-WARNING: [Synth 8-6014] Unused sequential element currmem_reg[99] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:59]
+WARNING: [Synth 8-6040] Register Àô±¥þ driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[0] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[1] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[2] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[3] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[4] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[5] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[6] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[7] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[8] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[9] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[10] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[11] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[12] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[13] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[14] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[15] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[16] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[17] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[18] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[19] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[20] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[21] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[22] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[23] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[24] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[25] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[26] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[27] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[28] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[29] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[30] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[31] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[32] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[33] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[34] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[35] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[36] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[37] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[38] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[39] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[40] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[41] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[42] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[43] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[44] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[45] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[46] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[47] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[48] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[49] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[50] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[51] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[52] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[53] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[54] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[55] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[56] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[57] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[58] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[59] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[60] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[61] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[62] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[63] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[64] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[65] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[66] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[67] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[68] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[69] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[70] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[71] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[72] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[73] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[74] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[75] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[76] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[77] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[78] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[79] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[80] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[81] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[82] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[83] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[84] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[85] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[86] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[87] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[88] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[89] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[90] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[91] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[92] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[93] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[94] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[95] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[96] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[97] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element currmem_reg[98] was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/DenseLayer.v:62]
 INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'class_reg' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax.v:36]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:45 ; elapsed = 00:01:12 . Memory (MB): peak = 1535.676 ; gain = 1246.051
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:31 . Memory (MB): peak = 1538.723 ; gain = 1248.770
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
-|1     |DenseLayer__GB0 |           1|     33402|
-|2     |DenseLayer__GB1 |           1|      8029|
-|3     |DenseLayer__GB2 |           1|      8530|
-|4     |DenseLayer__GB3 |           1|      6627|
-|5     |DenseLayer__GB4 |           1|      9395|
-|6     |DenseLayer__GB5 |           1|     17577|
-|7     |DenseLayer__GB6 |           1|     10955|
-|8     |DenseLayer__GB7 |           1|     12192|
+|1     |DenseLayer__GB0 |           1|     34487|
+|2     |DenseLayer__GB1 |           1|      8463|
+|3     |DenseLayer__GB2 |           1|      7754|
+|4     |DenseLayer__GB3 |           1|      7454|
+|5     |DenseLayer__GB4 |           1|     17846|
+|6     |DenseLayer__GB5 |           1|     19530|
+|7     |DenseLayer__GB6 |           1|     12288|
 +------+----------------+------------+----------+
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -181,17 +183,19 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 256   
 +---Registers : 
-	               96 Bit    Registers := 1     
+	              120 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
 	                4 Bit    Registers := 257   
 +---ROMs : 
 	                              ROMs := 256   
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     30 Bit        Muxes := 3     
 	   2 Input     22 Bit        Muxes := 256   
 	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 256   
-	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -205,7 +209,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 257   
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               96 Bit    Registers := 1     
+	              120 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
 	                4 Bit    Registers := 257   
 +---ROMs : 
@@ -984,6 +988,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     22 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
+Module Argmax 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 Module Bitshift__110 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -2093,12 +2103,12 @@ INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to los
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:17]
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:16]
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v:15]
-WARNING: [Synth 8-6040] Register Àôë»þ driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register Àô±¥þ driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 INFO: [Synth 8-3886] merging instance 'i_4/currbias_reg[1]' (FD) to 'i_4/currbias_reg[2]'
 INFO: [Synth 8-3886] merging instance 'i_4/currbias_reg[2]' (FD) to 'i_4/currbias_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\currbias_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:01 ; elapsed = 00:04:34 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:36 . Memory (MB): peak = 1824.672 ; gain = 1534.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2364,245 +2374,236 @@ ROM:
 |DenseLayer  | currmem_reg[253] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[254] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[255] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[115] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[43]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[114] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[77]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[78]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[113] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[214] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[141] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[139] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[177] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[179] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[146] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[51]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[52]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[50]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[53]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[204] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[54]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[206] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[47]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[82]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[46]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[210] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[196] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[57]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[58]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[59]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[0]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[190] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[188] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[62]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[2]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[142] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[63]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[64]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[65]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[66]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[67]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[68]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[69]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[136] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[182] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[119] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[180] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[144] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[120] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[72]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[117] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[131] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[104] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[137] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[122] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[123] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[73]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[212] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[108] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[74]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[124] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[125] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[75]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[130] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[107] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[127] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[168] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[129] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[106] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[105] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[10]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[147] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[148] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[149] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[150] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[138] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[99]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[152] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[153] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[139] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[97]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[96]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[19]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[95]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[21]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[155] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[156] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[157] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[91]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[26]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[158] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[140] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[92]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[141] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[142] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[89]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[160] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[87]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[85]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[161] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[165] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[42]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[39]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[221] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[222] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[33]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[225] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[31]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[29]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[88]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[143] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[144] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[145] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[28]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[27]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[25]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[228] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[229] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[237] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[17]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[15]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[14]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[13]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[147] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[249] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[243] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[11]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[244] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[8]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[7]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[247] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[130] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[5]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[4]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[251] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[110] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[111] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[231] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[225] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[11]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[250] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[113] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[12]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[2]   | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[1]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[128] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[126] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[121] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[108] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[132] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[133] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[134] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[135] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[118] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[14]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[220] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[16]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[116] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[138] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[17]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[18]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[117] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[118] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[119] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[19]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[120] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[216] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[215] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[121] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[22]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[203] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[200] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[26]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[27]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[129] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[128] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[124] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[125] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[126] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[112] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[140] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[111] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[110] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[143] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[197] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[127] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[29]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[30]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[32]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[33]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[34]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[196] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[36]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[37]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[38]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[40]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[42]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[44]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[46]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[192] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[48]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[189] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[50]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[186] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[185] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[184] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[183] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[179] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[56]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[57]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[174] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[59]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[171] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[61]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[62]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[63]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[64]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[65]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[164] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[67]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[161] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[159] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[70]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[71]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[156] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[155] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[74]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[75]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[76]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[79]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[80]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[149] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[82]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[123] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[122] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[109] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[145] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[104] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[131] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[107] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[105] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[103] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[135] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[102] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[101] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[100] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[151] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[98]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[97]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[154] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[94]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[93]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[92]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[91]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[90]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[159] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[88]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[84]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[87]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[86]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[85]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[146] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[83]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[148] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[81]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[150] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[151] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[77]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[153] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[154] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[73]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[72]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[157] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[158] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[69]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[160] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[68]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[162] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[163] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[164] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[83]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[66]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[165] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[166] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[167] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[80]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[168] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[169] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[170] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[171] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[60]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[172] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[173] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[174] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[58]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[175] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[176] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[79]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[177] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[178] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[76]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[71]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[55]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[180] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[181] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[70]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[183] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[184] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[185] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[186] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[182] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[54]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[53]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[52]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[51]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[187] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[61]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[189] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[60]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[188] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[49]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[190] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[191] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[192] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[47]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[193] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[194] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[195] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[56]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[197] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[45]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[41]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[35]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[25]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[198] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[199] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[200] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[24]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[201] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[202] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[203] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[49]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[23]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[204] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[205] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[48]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[206] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[207] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[208] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[209] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[45]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[210] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[211] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[44]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[212] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[213] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[40]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[215] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[216] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[38]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[214] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[21]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[20]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[217] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[218] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[219] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[220] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[37]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[36]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[223] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[15]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[221] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[222] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[13]  | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[224] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[32]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[24]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[227] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[23]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[22]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[231] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[232] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[233] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[234] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[10]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[226] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[228] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[230] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[9]   | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[235] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[20]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[236] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[238] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[239] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[18]  | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[240] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[241] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[242] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[12]  | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[9]   | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[8]   | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[244] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[245] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[246] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[6]   | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[248] | 1024x4        | Block RAM      | 
-|DenseLayer  | currmem_reg[249] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[3]   | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[251] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[252] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[253] | 1024x4        | Block RAM      | 
+|DenseLayer  | currmem_reg[254] | 1024x4        | Block RAM      | 
 |DenseLayer  | currmem_reg[255] | 1024x4        | Block RAM      | 
 +------------+------------------+---------------+----------------+
 
@@ -2614,142 +2615,140 @@ Report RTL Partitions:
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
-|1     |DenseLayer__GB0 |           1|     34126|
-|2     |DenseLayer__GB1 |           1|      5365|
-|3     |DenseLayer__GB2 |           1|      5104|
-|4     |DenseLayer__GB3 |           1|      1126|
-|5     |DenseLayer__GB4 |           1|      4845|
-|6     |DenseLayer__GB5 |           1|     11745|
-|7     |DenseLayer__GB6 |           1|      5647|
-|8     |DenseLayer__GB7 |           1|      1258|
+|1     |DenseLayer__GB0 |           1|     36126|
+|2     |DenseLayer__GB1 |           1|      5655|
+|3     |DenseLayer__GB2 |           1|      4162|
+|4     |DenseLayer__GB3 |           1|      2597|
+|5     |DenseLayer__GB4 |           1|      8919|
+|6     |DenseLayer__GB5 |           1|     13050|
+|7     |DenseLayer__GB6 |           1|      1256|
 +------+----------------+------------+----------+
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:05:02 ; elapsed = 00:04:35 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Timing Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:36 . Memory (MB): peak = 1824.672 ; gain = 1534.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
-|1     |DenseLayer__GB0 |           1|     34126|
-|2     |DenseLayer__GB1 |           1|      5365|
-|3     |DenseLayer__GB2 |           1|      5104|
-|4     |DenseLayer__GB3 |           1|      1126|
-|5     |DenseLayer__GB4 |           1|      4845|
-|6     |DenseLayer__GB5 |           1|     11745|
-|7     |DenseLayer__GB6 |           1|      5647|
-|8     |DenseLayer__GB7 |           1|      1258|
+|1     |DenseLayer__GB0 |           1|     36126|
+|2     |DenseLayer__GB1 |           1|      5655|
+|3     |DenseLayer__GB2 |           1|      4162|
+|4     |DenseLayer__GB3 |           1|      2597|
+|5     |DenseLayer__GB4 |           1|      8919|
+|6     |DenseLayer__GB5 |           1|     13050|
+|7     |DenseLayer__GB6 |           1|      1256|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[115] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[115] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[114] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[114] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[78] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[78] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[214] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[214] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[139] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[139] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[179] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[179] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[51] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[51] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[50] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[50] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[204] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[204] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[206] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[206] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[82] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[82] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[81] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[81] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[55] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[55] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[57] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[57] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[59] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[59] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[190] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[190] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[62] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[62] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[142] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[142] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[64] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[64] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[66] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[66] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[68] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[68] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[136] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[136] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[119] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[119] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[144] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[144] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[72] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[72] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[131] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[131] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[122] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[122] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[73] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[73] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[108] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[108] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[124] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[124] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[75] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[75] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[107] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[107] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[168] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[168] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[106] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[106] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[10] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[10] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[148] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[148] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[150] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[150] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[152] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[152] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[96] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[96] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[104] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[104] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[137] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[137] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[99] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[99] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[97] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[97] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[95] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[95] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[155] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[155] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[157] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[157] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[26] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[26] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[140] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[140] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[141] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[141] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[89] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[89] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[87] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[87] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[85] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[85] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[143] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[143] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[145] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[145] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[28] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[28] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[7] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[7] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[243] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[243] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[5] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[5] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[4] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[4] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[231] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[231] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[11] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[11] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[113] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[113] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[114] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[114] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[1] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[1] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[0] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[0] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[106] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[106] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[223] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[223] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[134] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[134] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[220] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[220] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[116] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[116] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[18] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[18] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[118] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[118] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[19] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[19] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[216] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[216] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[121] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[121] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[203] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[203] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[26] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[26] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[129] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[129] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[124] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[124] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[126] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[112] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[112] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[127] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[127] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[30] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[30] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[32] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[32] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[34] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[34] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[36] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[36] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[38] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[38] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[40] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[40] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[42] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance currmem_reg[42] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[39] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[39] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[221] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance currmem_reg[221] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[44] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[44] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[46] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[46] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[48] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[48] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[50] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[50] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[185] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[185] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance currmem_reg[183] (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:18 ; elapsed = 00:04:51 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:01:43 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2769,12 +2768,11 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6064] Net nodecounter[8] is driving 127 big block pins (URAM, BRAM and DSP loads). Created 13 replicas of its driver. 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:23 ; elapsed = 00:04:57 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:01:45 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2787,7 +2785,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:23 ; elapsed = 00:04:57 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:01:45 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2799,25 +2797,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:25 ; elapsed = 00:04:58 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:58 ; elapsed = 00:01:46 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:25 ; elapsed = 00:04:58 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:01:46 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:28 ; elapsed = 00:05:01 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:00 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:05:28 ; elapsed = 00:05:01 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:00 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2834,150 +2832,152 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |CARRY8   |   268|
-|3     |LUT1     |     7|
-|4     |LUT2     |    55|
-|5     |LUT3     |  2107|
-|6     |LUT4     |  1395|
-|7     |LUT5     |  6674|
-|8     |LUT6     | 10672|
+|2     |CARRY8   |   307|
+|3     |LUT1     |     8|
+|4     |LUT2     |   108|
+|5     |LUT3     |  2217|
+|6     |LUT4     |  1464|
+|7     |LUT5     |  6800|
+|8     |LUT6     | 10845|
 |9     |RAMB18E2 |   129|
-|10    |FDRE     |   155|
-|11    |IBUF     |  4098|
-|12    |OBUF     |    96|
+|10    |FDRE     |   169|
+|11    |LD       |     3|
+|12    |IBUF     |  4098|
+|13    |OBUF     |     3|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+---------+--------+------+
 |      |Instance |Module  |Cells |
 +------+---------+--------+------+
-|1     |top      |        | 25657|
-|2     |  add    |Adder22 | 21119|
+|1     |top      |        | 26152|
+|2     |  add    |Adder22 | 21373|
+|3     |  arg    |Argmax  |   226|
 +------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:28 ; elapsed = 00:05:01 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:00 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 515 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:28 ; elapsed = 00:05:01 . Memory (MB): peak = 1847.977 ; gain = 1558.352
-Synthesis Optimization Complete : Time (s): cpu = 00:05:28 ; elapsed = 00:05:01 . Memory (MB): peak = 1847.977 ; gain = 1558.352
+Synthesis finished with 0 errors, 0 critical warnings and 517 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:00 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.547 ; gain = 1538.594
+Synthesis Optimization Complete : Time (s): cpu = 00:02:00 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.547 ; gain = 1538.594
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4367 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Netlist 29-17] Analyzing 4409 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'DenseLayer' is not ideal for floorplanning, since the cellview 'Adder22' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[101] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[0] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[100] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[102] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[103] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[104] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[106] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[107] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[108] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[10] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[111] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[109] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[112] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[113] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[114] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[115] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[116] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[119] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[118] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[11] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[121] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[122] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[123] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[124] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[128] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[12] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[131] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[133] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[135] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[136] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[139] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[13] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[142] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[127] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[129] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[134] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[137] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[140] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[141] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[143] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[144] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[145] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[146] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[148] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[150] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[151] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[152] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[155] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[157] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[159] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[154] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[156] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[158] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[15] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[163] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[167] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[160] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[161] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[162] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[164] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[166] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[168] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[169] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[170] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[171] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[173] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[175] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[179] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[17] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[181] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[172] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[174] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[176] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[178] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[180] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[182] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[183] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[185] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[187] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[189] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[188] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[18] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[190] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[191] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[193] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[195] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[197] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[199] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[201] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[198] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[19] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[1] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[202] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[203] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[204] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[205] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[206] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[207] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[209] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[208] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[20] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[211] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[213] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[210] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[212] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[214] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[215] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[219] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[221] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[216] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[218] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[220] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[222] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[223] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[225] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[227] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[224] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[226] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[228] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[22] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[230] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[231] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[233] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[235] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[237] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[239] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[241] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[245] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[247] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[249] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[253] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[25] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[232] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[234] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[236] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[238] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[240] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[242] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[243] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[244] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[246] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[248] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[24] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[252] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[254] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[26] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[28] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[30] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[32] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[34] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[35] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[37] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[36] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[38] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[39] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[3] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[40] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[42] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[4] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[50] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
-INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[51] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[44] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[45] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell currmem_reg[46] has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Common 17-14] Message 'Opt 31-422' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4099 instances were transformed.
+  A total of 4102 instances were transformed.
   BUFG => BUFGCE: 1 instances
   IBUF => IBUF (IBUFCTRL, INBUF): 4098 instances
+  LD => LDCE: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-292 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+293 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:07 ; elapsed = 00:05:46 . Memory (MB): peak = 1847.977 ; gain = 1571.012
+synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:01 . Memory (MB): peak = 1828.547 ; gain = 1551.641
 INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1/DenseLayer.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1847.977 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file DenseLayer_utilization_synth.rpt -pb DenseLayer_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.859 . Memory (MB): peak = 1847.977 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 17 13:00:57 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 1828.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 18 16:48:52 2024...

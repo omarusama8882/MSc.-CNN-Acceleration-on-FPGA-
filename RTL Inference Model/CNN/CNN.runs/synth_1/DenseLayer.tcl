@@ -39,6 +39,8 @@ read_verilog -library xil_defaultlib {
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Neuron.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Neuron_testbench.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v}
+  {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax.v}
+  {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax_tb.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

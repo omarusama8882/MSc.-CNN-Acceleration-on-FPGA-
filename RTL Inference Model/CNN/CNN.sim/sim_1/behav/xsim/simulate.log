@@ -5,6 +5,8 @@ bias[          0]=0.000000
 bias[          1]=0.000000
 bias[          2]=1.000000
 bias[          3]=0.000000
+Time: 0 | finish:
+finish=0
 Time: 0 | outputcounter values:
 outputcounter=          0
 Time: 0 | inputs:
@@ -1301,6 +1303,7 @@ currResult=90358.515625
 Time: 15 | outputcounter values:
 outputcounter=          2
 Time: 15 | outputs:
+outputs=xxxxxxxxxxxxxxxxxxxxxxX11e2b28
 outputs[          0]=73259.156250
 outputs[          1]=0.000000
 outputs[          2]=0.000000
@@ -1826,6 +1829,7 @@ currResult=78342.140625
 Time: 25 | outputcounter values:
 outputcounter=          3
 Time: 25 | outputs:
+outputs=xxxxxxxxxxxxxxx0583da1011e2b28
 outputs[          0]=73259.156250
 outputs[          1]=90358.515625
 outputs[          2]=0.000000
@@ -2351,6 +2355,7 @@ currResult=85907.562500
 Time: 35 | outputcounter values:
 outputcounter=          4
 Time: 35 | outputs:
+outputs=xxxxxxxX13206240583da1011e2b28
 outputs[          0]=73259.156250
 outputs[          1]=90358.515625
 outputs[          2]=78342.140625
@@ -2874,7 +2879,10 @@ Time: 45 | level1 values:
 Time: 45 | outputcounter values:
 outputcounter=          5
 Time: 45 | outputs:
+outputs=053e4e4013206240583da1011e2b28
 outputs[          0]=73259.156250
 outputs[          1]=90358.515625
 outputs[          2]=78342.140625
 outputs[          3]=85907.562500
+Time: 55 | finish:
+finish=1

@@ -1,16 +1,14 @@
 `timescale 1ns / 1ps
-
-
 module DenseLayer_testbench;
 reg signed [4095:0]  inputs;
 reg clk;
 reg rst;
-wire signed[119:0]  outputs;
+wire[2:0] class;
 DenseLayer uut(
 .inputs(inputs),
 .clk(clk),
 .rst(rst),
-.outputs(outputs)
+.class(class)
 );
 localparam SF=2.0**-8.0;
 integer i;
@@ -37,11 +35,11 @@ $display("bias[%d]=%f",i, uut.bias[i]);
 
 end
 end
-always@(outputs) begin
+always@(uut.outputs) begin
 $display("Time: %0d | outputs:", $time);
-
+$display("outputs=%h",uut.outputs);
 for (i = 0; i < 4; i = i + 1) begin
-$display("outputs[%d]=%f",i, outputs[30*i+:30]*SF);
+$display("outputs[%d]=%f",i, uut.outputs[30*i+:30]*SF);
 end
 end
 always@(uut.bitshifted) begin
@@ -51,9 +49,6 @@ for (i = 0; i < 256; i = i + 1) begin
 $display("%f", uut.bitshifted[22*i+:22]*SF);
 
 end
-
-
-
 
 end
 
@@ -72,6 +67,10 @@ end
 always@(uut.output_counter) begin
 $display("Time: %0d | outputcounter values:", $time);
 $display("outputcounter=%d",uut.output_counter);
+end
+always@(uut.finish) begin
+$display("Time: %0d | finish:", $time);
+$display("finish=%d",uut.finish);
 end
 
 endmodule

@@ -18,3 +18,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/MSc.-CNN-Accele
 INFO: [VRFC 10-311] analyzing module Neuron_testbench
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/22Adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Adder22
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Argmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/Argmax_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Argmax_tb

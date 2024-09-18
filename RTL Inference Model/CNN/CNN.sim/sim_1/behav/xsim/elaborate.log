@@ -111,6 +111,7 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Bitshift
 Compiling module xil_defaultlib.Adder22
+Compiling module xil_defaultlib.Argmax
 Compiling module xil_defaultlib.DenseLayer_default
 Compiling module xil_defaultlib.DenseLayer_testbench
 Compiling module xil_defaultlib.glbl
