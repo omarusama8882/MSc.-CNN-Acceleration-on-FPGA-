@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log PoolingAdder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PoolingAdder.tcl
+EAStep vivado -log SingleAvgPooling.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SingleAvgPooling.tcl
