@@ -142,7 +142,7 @@ end
 
 endgenerate
 
-Adder22 add(
+DenseAdder add(
 .values(bitshifted),
 .bias(currbias),
 .result(currResult)

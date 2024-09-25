@@ -63,10 +63,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top DenseAdder -part xcku5p-ffvb676-2-e
+synth_design -top DenseLayer -part xcku5p-ffvb676-2-e
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef DenseAdder.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file DenseAdder_utilization_synth.rpt -pb DenseAdder_utilization_synth.pb"
+write_checkpoint -force -noxdef DenseLayer.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file DenseLayer_utilization_synth.rpt -pb DenseLayer_utilization_synth.pb"
