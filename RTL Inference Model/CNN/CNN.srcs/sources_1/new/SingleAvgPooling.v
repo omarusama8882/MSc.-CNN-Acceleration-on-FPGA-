@@ -4,8 +4,8 @@ input signed [15*15*16:0] map,
 output signed [15:0] avg
 );
 wire signed [23:0] sum;
-//reg  [15:0] divisor=16'b0000000000000001;
-reg  [15:0] divisor=16'b1110000100000000;
+//reg signed  [15:0] divisor=16'b0000000010000001;
+reg  [15:0] divisor=16'b000000011100001;
 //wire signed [39:0] average;
 PoolingAdder pool(
 .map(map),

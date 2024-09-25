@@ -1,7 +1,7 @@
-Running: xsim.dir/SingleAvgPooling_tb_behav/xsimk.exe -simmode gui -wdb SingleAvgPooling_tb_behav.wdb -simrunnum 0 -socket 50337
+Running: xsim.dir/SingleAvgPooling_tb_behav/xsimk.exe -simmode gui -wdb SingleAvgPooling_tb_behav.wdb -simrunnum 0 -socket 57381
 Design successfully loaded
-Design Loading Memory Usage: 6972 KB (Peak: 6972 KB)
-Design Loading CPU Usage: 77 ms
+Design Loading Memory Usage: 6952 KB (Peak: 6952 KB)
+Design Loading CPU Usage: 31 ms
 Simulation completed
-Simulation Memory Usage: 7648 KB (Peak: 7648 KB)
-Simulation CPU Usage: 108 ms
+Simulation Memory Usage: 7636 KB (Peak: 7636 KB)
+Simulation CPU Usage: 62 ms

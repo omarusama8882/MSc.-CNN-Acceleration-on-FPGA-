@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log SingleAvgPooling.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SingleAvgPooling.tcl" );
+         "-log DenseAdder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DenseAdder.tcl" );
 
 
 

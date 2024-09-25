@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xcku5p-ffvb676-2-e
 
 set_param project.singleFileAddWarning.threshold 0
@@ -47,11 +46,12 @@ read_verilog -library xil_defaultlib {
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/PoolingAdder.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/PoolingAdder_tb.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/SingleAvgPooling_tb.v}
+  {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/GlobalAveragePooling.v}
 }
 read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0_ooc.xdc}}]
 
-read_ip -quiet {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}
+read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/div_gen_0/div_gen_0_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -63,10 +63,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top SingleAvgPooling -part xcku5p-ffvb676-2-e
+synth_design -top DenseAdder -part xcku5p-ffvb676-2-e
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef SingleAvgPooling.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file SingleAvgPooling_utilization_synth.rpt -pb SingleAvgPooling_utilization_synth.pb"
+write_checkpoint -force -noxdef DenseAdder.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file DenseAdder_utilization_synth.rpt -pb DenseAdder_utilization_synth.pb"

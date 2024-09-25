@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Sep 22 15:17:44 2024
-# Process ID: 16048
+# Start of session at: Wed Sep 25 18:55:47 2024
+# Process ID: 10304
 # Current directory: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1
-# Command line: vivado.exe -log SingleAvgPooling.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SingleAvgPooling.tcl
-# Log file: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1/SingleAvgPooling.vds
+# Command line: vivado.exe -log DenseAdder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DenseAdder.tcl
+# Log file: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1/DenseAdder.vds
 # Journal file: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source SingleAvgPooling.tcl -notrace
+source DenseAdder.tcl -notrace
