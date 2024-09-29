@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log DenseLayer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DenseLayer.tcl
+EAStep vivado -log BN_Channel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BN_Channel.tcl

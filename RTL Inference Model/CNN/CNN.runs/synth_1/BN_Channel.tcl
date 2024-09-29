@@ -47,6 +47,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/PoolingAdder_tb.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/SingleAvgPooling_tb.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/GlobalAveragePooling.v}
+  {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v}
 }
 read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0_ooc.xdc}}]
@@ -63,10 +64,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top DenseLayer -part xcku5p-ffvb676-2-e
+synth_design -top BN_Channel -part xcku5p-ffvb676-2-e
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef DenseLayer.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file DenseLayer_utilization_synth.rpt -pb DenseLayer_utilization_synth.pb"
+write_checkpoint -force -noxdef BN_Channel.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file BN_Channel_utilization_synth.rpt -pb BN_Channel_utilization_synth.pb"
