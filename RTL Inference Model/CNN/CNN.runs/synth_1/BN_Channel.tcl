@@ -48,6 +48,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/SingleAvgPooling_tb.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/GlobalAveragePooling.v}
   {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v}
+  {C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BNChannel_tb.v}
 }
 read_ip -quiet {{C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0_ooc.xdc}}]

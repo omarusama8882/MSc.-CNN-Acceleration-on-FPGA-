@@ -14,22 +14,95 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14408 
+INFO: Helper process launched with PID 1528 
 WARNING: [Synth 8-2135] illegal format specifier a for display [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder_testbench.v:79]
 WARNING: [Synth 8-1102] /* in comment [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/AveragePooling.v:43]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 617.551 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 616.637 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'BN_Channel' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:1]
 	Parameter H bound to: 5 - type: integer 
 	Parameter W bound to: 5 - type: integer 
-	Parameter sqrtpow bound to: 16'b0100000000000000 
-WARNING: [Synth 8-6014] Unused sequential element out1_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:48]
-WARNING: [Synth 8-6014] Unused sequential element outsimplified_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:49]
-WARNING: [Synth 8-6014] Unused sequential element newval_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:50]
+	Parameter sqrtpow bound to: 0.500000 - type: float 
+ERROR: [Synth 8-502] non-constant real-valued expression is not supported [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:39]
+ERROR: [Synth 8-285] failed synthesizing module 'BN_Channel' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 616.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  1 21:05:08 2024...
+
+*** Running vivado
+    with args -log BN_Channel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BN_Channel.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source BN_Channel.tcl -notrace
+Command: synth_design -top BN_Channel -part xcku5p-ffvb676-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14064 
+WARNING: [Synth 8-2135] illegal format specifier a for display [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder_testbench.v:79]
+WARNING: [Synth 8-1102] /* in comment [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/AveragePooling.v:43]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 616.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BN_Channel' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:1]
+	Parameter H bound to: 5 - type: integer 
+	Parameter W bound to: 5 - type: integer 
+	Parameter sqrtpow bound to: 0.500000 - type: float 
+ERROR: [Synth 8-502] non-constant real-valued expression is not supported [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:39]
+ERROR: [Synth 8-285] failed synthesizing module 'BN_Channel' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 616.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  1 21:07:34 2024...
+
+*** Running vivado
+    with args -log BN_Channel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BN_Channel.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source BN_Channel.tcl -notrace
+Command: synth_design -top BN_Channel -part xcku5p-ffvb676-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12740 
+WARNING: [Synth 8-2135] illegal format specifier a for display [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/Mobilenetv1 Lite.srcs/sources_1/new/Adder_testbench.v:79]
+WARNING: [Synth 8-1102] /* in comment [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/AveragePooling.v:43]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 616.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BN_Channel' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:1]
+	Parameter H bound to: 5 - type: integer 
+	Parameter W bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element out1_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:49]
+WARNING: [Synth 8-6014] Unused sequential element outsimplified_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:50]
+WARNING: [Synth 8-6014] Unused sequential element newval_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:51]
 INFO: [Synth 8-256] done synthesizing module 'BN_Channel' (1#1) [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 617.551 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 616.531 ; gain = 0.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -39,7 +112,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 617.551 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 616.531 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -51,36 +124,35 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1373.977 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1374.238 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1373.977 ; gain = 756.426
+Finished Constraint Validation : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1374.238 ; gain = 757.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xcku5p-ffvb676-2-e
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1373.977 ; gain = 756.426
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1374.238 ; gain = 757.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1373.977 ; gain = 756.426
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1374.238 ; gain = 757.707
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element rowcounter_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:48]
+WARNING: [Synth 8-6014] Unused sequential element rowcounter_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:49]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1373.977 ; gain = 756.426
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1374.238 ; gain = 757.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
-|1     |BN_Channel__GB0 |           1|     21024|
+|1     |BN_Channel__GB0 |           1|     21199|
 |2     |BN_Channel__GB1 |           1|     20560|
-|3     |BN_Channel__GB2 |           1|     23173|
-|4     |BN_Channel__GB3 |           1|       392|
+|3     |BN_Channel__GB2 |           1|     23551|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -132,51 +204,23 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'rowcounter_reg[31:0]' into 'rowcounter_reg[31:0]' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:48]
-WARNING: [Synth 8-6014] Unused sequential element rowcounter_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:48]
-WARNING: [Synth 8-6014] Unused sequential element rowcounter_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:48]
-DSP Report: Generating DSP gmbvcmult, operation Mode is: A*B.
-DSP Report: operator gmbvcmult is absorbed into DSP gmbvcmult.
-DSP Report: Generating DSP gvcmult, operation Mode is: A*B.
-DSP Report: operator gvcmult is absorbed into DSP gvcmult.
-DSP Report: Generating DSP outmap2, operation Mode is: A*B.
-DSP Report: operator outmap2 is absorbed into DSP outmap2.
+INFO: [Synth 8-4471] merging register 'rowcounter_reg[31:0]' into 'rowcounter_reg[31:0]' [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:49]
+WARNING: [Synth 8-6014] Unused sequential element rowcounter_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:49]
+WARNING: [Synth 8-6014] Unused sequential element rowcounter_reg was removed.  [C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN_Channel.v:49]
 DSP Report: Generating DSP outmap3, operation Mode is: A*B.
 DSP Report: operator outmap3 is absorbed into DSP outmap3.
-DSP Report: Generating DSP outmap4, operation Mode is: A*B.
-DSP Report: operator outmap4 is absorbed into DSP outmap4.
+DSP Report: Generating DSP outmap3, operation Mode is: A*B.
+DSP Report: operator outmap3 is absorbed into DSP outmap3.
 DSP Report: Generating DSP outmap6, operation Mode is: A*B.
 DSP Report: operator outmap6 is absorbed into DSP outmap6.
 DSP Report: Generating DSP outmap5, operation Mode is: A*B.
 DSP Report: operator outmap5 is absorbed into DSP outmap5.
-DSP Report: Generating DSP sqrtvarc12, operation Mode is: A*B.
-DSP Report: operator sqrtvarc12 is absorbed into DSP sqrtvarc12.
-DSP Report: Generating DSP sqrtvarc11, operation Mode is: A*B.
-DSP Report: operator sqrtvarc11 is absorbed into DSP sqrtvarc11.
-DSP Report: Generating DSP sqrtvarc10, operation Mode is: A*B.
-DSP Report: operator sqrtvarc10 is absorbed into DSP sqrtvarc10.
-DSP Report: Generating DSP sqrtvarc9, operation Mode is: A*B.
-DSP Report: operator sqrtvarc9 is absorbed into DSP sqrtvarc9.
-DSP Report: Generating DSP sqrtvarc8, operation Mode is: A*B.
-DSP Report: operator sqrtvarc8 is absorbed into DSP sqrtvarc8.
-DSP Report: Generating DSP sqrtvarc7, operation Mode is: A*B.
-DSP Report: operator sqrtvarc7 is absorbed into DSP sqrtvarc7.
-DSP Report: Generating DSP sqrtvarc6, operation Mode is: A*B.
-DSP Report: operator sqrtvarc6 is absorbed into DSP sqrtvarc6.
-DSP Report: Generating DSP sqrtvarc5, operation Mode is: A*B.
-DSP Report: operator sqrtvarc5 is absorbed into DSP sqrtvarc5.
-DSP Report: Generating DSP sqrtvarc4, operation Mode is: A*B.
-DSP Report: operator sqrtvarc4 is absorbed into DSP sqrtvarc4.
-DSP Report: Generating DSP sqrtvarc3, operation Mode is: A*B.
-DSP Report: operator sqrtvarc3 is absorbed into DSP sqrtvarc3.
-DSP Report: Generating DSP sqrtvarc2, operation Mode is: A*B.
-DSP Report: operator sqrtvarc2 is absorbed into DSP sqrtvarc2.
-DSP Report: Generating DSP sqrtvarc1, operation Mode is: A*B.
-DSP Report: operator sqrtvarc1 is absorbed into DSP sqrtvarc1.
-DSP Report: Generating DSP sqrtvarc0, operation Mode is: A*B.
-DSP Report: operator sqrtvarc0 is absorbed into DSP sqrtvarc0.
-DSP Report: Generating DSP sqrtvarc, operation Mode is: A*B.
-DSP Report: operator sqrtvarc is absorbed into DSP sqrtvarc.
+DSP Report: Generating DSP outmap4, operation Mode is: A*B.
+DSP Report: operator outmap4 is absorbed into DSP outmap4.
+DSP Report: Generating DSP outmap3, operation Mode is: A*B.
+DSP Report: operator outmap3 is absorbed into DSP outmap3.
+DSP Report: Generating DSP outmap2, operation Mode is: A*B.
+DSP Report: operator outmap2 is absorbed into DSP outmap2.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\rowcounter_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\rowcounter_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\rowcounter_reg[2] )
@@ -284,7 +328,7 @@ INFO: [Synth 8-3886] merging instance 'i_2/outmap_reg[179]' (FDE) to 'i_2/outmap
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\outmap_reg[399] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1373.977 ; gain = 756.426
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:30 ; elapsed = 00:02:38 . Memory (MB): peak = 1374.238 ; gain = 757.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -294,20 +338,6 @@ DSP: Preliminary Mapping  Report (see note below)
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |BN_Channel  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
@@ -326,36 +356,34 @@ Report RTL Partitions:
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
-|1     |BN_Channel__GB0 |           1|        82|
-|2     |BN_Channel__GB2 |           1|       793|
-|3     |BN_Channel__GB3 |           1|       129|
+|1     |BN_Channel__GB0 |           1|       157|
+|2     |BN_Channel__GB2 |           1|       906|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 2089.555 ; gain = 1472.004
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:23 ; elapsed = 00:03:32 . Memory (MB): peak = 2088.832 ; gain = 1472.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 2089.555 ; gain = 1472.004
+Finished Timing Optimization : Time (s): cpu = 00:03:23 ; elapsed = 00:03:32 . Memory (MB): peak = 2088.906 ; gain = 1472.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
-|1     |BN_Channel__GB0 |           1|        82|
-|2     |BN_Channel__GB2 |           1|       842|
-|3     |BN_Channel__GB3 |           1|       227|
+|1     |BN_Channel__GB0 |           1|       157|
+|2     |BN_Channel__GB2 |           1|       955|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished Technology Mapping : Time (s): cpu = 00:03:23 ; elapsed = 00:03:32 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -379,7 +407,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished IO Insertion : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -392,7 +420,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -404,25 +432,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -439,76 +467,62 @@ Report Cell Usage:
 |      |Cell            |Count |
 +------+----------------+------+
 |1     |BUFG            |     1|
-|2     |CARRY8          |    16|
-|3     |DSP_ALU         |    21|
-|4     |DSP_A_B_DATA    |    21|
-|5     |DSP_C_DATA      |    21|
-|6     |DSP_MULTIPLIER  |    21|
-|7     |DSP_M_DATA      |    21|
-|8     |DSP_OUTPUT      |    21|
-|9     |DSP_PREADD      |    21|
-|10    |DSP_PREADD_DATA |    21|
-|11    |LUT1            |     3|
-|12    |LUT2            |    97|
+|2     |CARRY8          |    22|
+|3     |DSP_ALU         |     7|
+|4     |DSP_A_B_DATA    |     7|
+|5     |DSP_C_DATA      |     7|
+|6     |DSP_MULTIPLIER  |     7|
+|7     |DSP_M_DATA      |     7|
+|8     |DSP_OUTPUT      |     7|
+|9     |DSP_PREADD      |     7|
+|10    |DSP_PREADD_DATA |     7|
+|11    |LUT1            |     5|
+|12    |LUT2            |   112|
 |13    |LUT3            |    90|
 |14    |LUT4            |     6|
 |15    |LUT5            |     8|
 |16    |LUT6            |    10|
-|17    |FDRE            |   161|
+|17    |FDRE            |   188|
 |18    |IBUF            |   225|
 |19    |OBUF            |   400|
 +------+----------------+------+
 
 Report Instance Areas: 
-+------+-------------+----------------------+------+
-|      |Instance     |Module                |Cells |
-+------+-------------+----------------------+------+
-|1     |top          |                      |  1185|
-|2     |  gmbvcmult  |gmbvcmult_funnel      |     8|
-|3     |  gvcmult    |gmbvcmult_funnel__1   |     8|
-|4     |  outmap2    |gmbvcmult_funnel__2   |     8|
-|5     |  outmap3    |gmbvcmult_funnel__3   |     8|
-|6     |  outmap4    |gmbvcmult_funnel__4   |     8|
-|7     |  outmap6    |gmbvcmult_funnel__5   |     8|
-|8     |  outmap5    |gmbvcmult_funnel__6   |     8|
-|9     |  sqrtvarc12 |sqrtvarc12_funnel     |     8|
-|10    |  sqrtvarc11 |sqrtvarc12_funnel__1  |     8|
-|11    |  sqrtvarc10 |sqrtvarc12_funnel__2  |     8|
-|12    |  sqrtvarc9  |sqrtvarc12_funnel__3  |     8|
-|13    |  sqrtvarc8  |sqrtvarc12_funnel__4  |     8|
-|14    |  sqrtvarc7  |sqrtvarc12_funnel__5  |     8|
-|15    |  sqrtvarc6  |sqrtvarc12_funnel__6  |     8|
-|16    |  sqrtvarc5  |sqrtvarc12_funnel__7  |     8|
-|17    |  sqrtvarc4  |sqrtvarc12_funnel__8  |     8|
-|18    |  sqrtvarc3  |sqrtvarc12_funnel__9  |     8|
-|19    |  sqrtvarc2  |sqrtvarc12_funnel__10 |     8|
-|20    |  sqrtvarc1  |sqrtvarc12_funnel__11 |     8|
-|21    |  sqrtvarc0  |sqrtvarc12_funnel__12 |     8|
-|22    |  sqrtvarc   |sqrtvarc12_funnel__13 |     8|
-+------+-------------+----------------------+------+
++------+-------------+------------------+------+
+|      |Instance     |Module            |Cells |
++------+-------------+------------------+------+
+|1     |top          |                  |  1123|
+|2     |  outmap3    |outmap3_funnel    |     8|
+|3     |  outmap3__0 |outmap3_funnel__1 |     8|
+|4     |  outmap6    |outmap3_funnel__2 |     8|
+|5     |  outmap5    |outmap3_funnel__3 |     8|
+|6     |  outmap4    |outmap3_funnel__4 |     8|
+|7     |  outmap3__1 |outmap3_funnel__5 |     8|
+|8     |  outmap2    |outmap3_funnel__6 |     8|
++------+-------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:24 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:18 . Memory (MB): peak = 2115.266 ; gain = 741.289
-Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2115.266 ; gain = 1497.715
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:49 ; elapsed = 00:03:07 . Memory (MB): peak = 2110.609 ; gain = 736.371
+Synthesis Optimization Complete : Time (s): cpu = 00:03:25 ; elapsed = 00:03:34 . Memory (MB): peak = 2110.609 ; gain = 1494.078
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 263 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 255 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'BN_Channel' is not ideal for floorplanning, since the cellview 'BN_Channel' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 247 instances were transformed.
+  A total of 233 instances were transformed.
   BUFG => BUFGCE: 1 instances
-  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 21 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 7 instances
   IBUF => IBUF (IBUFCTRL, INBUF): 225 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
 120 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:40 . Memory (MB): peak = 2132.746 ; gain = 1515.195
+synth_design: Time (s): cpu = 00:03:28 ; elapsed = 00:03:39 . Memory (MB): peak = 2124.918 ; gain = 1508.387
 INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1/BN_Channel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file BN_Channel_utilization_synth.rpt -pb BN_Channel_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 2132.746 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Sep 29 16:39:51 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 2124.918 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  1 21:15:51 2024...
