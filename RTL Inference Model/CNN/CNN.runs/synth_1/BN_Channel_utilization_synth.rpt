@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Oct  1 21:15:51 2024
+| Date         : Thu Oct  3 09:38:30 2024
 | Host         : DESKTOP-E0RJCTD running 64-bit major release  (build 9200)
 | Command      : report_utilization -file BN_Channel_utilization_synth.rpt -pb BN_Channel_utilization_synth.pb
 | Design       : BN_Channel
@@ -31,15 +31,15 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               |  178 |     0 |    216960 |  0.08 |
-|   LUT as Logic          |  178 |     0 |    216960 |  0.08 |
+| CLB LUTs*               | 2432 |     0 |    216960 |  1.12 |
+|   LUT as Logic          | 2432 |     0 |    216960 |  1.12 |
 |   LUT as Memory         |    0 |     0 |     99840 |  0.00 |
-| CLB Registers           |  188 |     0 |    433920 |  0.04 |
-|   Register as Flip Flop |  188 |     0 |    433920 |  0.04 |
+| CLB Registers           |  433 |     0 |    433920 |  0.10 |
+|   Register as Flip Flop |  433 |     0 |    433920 |  0.10 |
 |   Register as Latch     |    0 |     0 |    433920 |  0.00 |
-| CARRY8                  |   22 |     0 |     27120 |  0.08 |
-| F7 Muxes                |    0 |     0 |    108480 |  0.00 |
-| F8 Muxes                |    0 |     0 |     54240 |  0.00 |
+| CARRY8                  |   11 |     0 |     27120 |  0.04 |
+| F7 Muxes                |  160 |     0 |    108480 |  0.15 |
+| F8 Muxes                |   32 |     0 |     54240 |  0.06 |
 | F9 Muxes                |    0 |     0 |     27120 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -60,7 +60,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 188   |          Yes |       Reset |            - |
+| 433   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -84,8 +84,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |    7 |     0 |      1824 |  0.38 |
-|   DSP48E2 only |    7 |       |           |       |
+| DSPs           |    5 |     0 |      1824 |  0.27 |
+|   DSP48E2 only |    5 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -95,7 +95,7 @@ Table of Contents
 +------------+------+-------+-----------+--------+
 |  Site Type | Used | Fixed | Available |  Util% |
 +------------+------+-------+-----------+--------+
-| Bonded IOB |  625 |     0 |       280 | 223.21 |
+| Bonded IOB |  833 |     0 |       280 | 297.50 |
 +------------+------+-------+-----------+--------+
 
 
@@ -154,18 +154,20 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| LUT6     | 1231 |                 CLB |
+| LUT5     |  956 |                 CLB |
+| INBUF    |  433 |                 I/O |
+| IBUFCTRL |  433 |              Others |
+| FDRE     |  433 |            Register |
 | OBUF     |  400 |                 I/O |
-| INBUF    |  225 |                 I/O |
-| IBUFCTRL |  225 |              Others |
-| FDRE     |  188 |            Register |
-| LUT2     |  112 |                 CLB |
-| LUT3     |   90 |                 CLB |
-| CARRY8   |   22 |                 CLB |
-| LUT6     |   10 |                 CLB |
-| LUT5     |    8 |                 CLB |
-| DSP48E2  |    7 |          Arithmetic |
-| LUT4     |    6 |                 CLB |
-| LUT1     |    5 |                 CLB |
+| LUT4     |  245 |                 CLB |
+| MUXF7    |  160 |                 CLB |
+| LUT2     |  158 |                 CLB |
+| LUT3     |  101 |                 CLB |
+| MUXF8    |   32 |                 CLB |
+| CARRY8   |   11 |                 CLB |
+| DSP48E2  |    5 |          Arithmetic |
+| LUT1     |    2 |                 CLB |
 | BUFGCE   |    1 |               Clock |
 +----------+------+---------------------+
 

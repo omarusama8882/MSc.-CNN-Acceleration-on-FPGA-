@@ -15,6 +15,10 @@ verilog xil_defaultlib  \
 "../../../../CNN.srcs/sources_1/new/SingleAvgPooling.v" \
 "../../../../CNN.srcs/sources_1/new/PoolingAdder.v" \
 "../../../../CNN.srcs/sources_1/new/PoolingAdder_tb.v" \
+"../../../../CNN.srcs/sources_1/new/SingleAvgPooling_tb.v" \
+"../../../../CNN.srcs/sources_1/new/GlobalAveragePooling.v" \
+"../../../../CNN.srcs/sources_1/new/BN_Channel.v" \
+"../../../../CNN.srcs/sources_1/new/BNChannel_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

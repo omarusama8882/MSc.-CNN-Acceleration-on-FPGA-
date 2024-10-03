@@ -1,10 +1,206 @@
 Vivado Simulator 2017.4
 Time resolution is 1 ps
 Time: 0 | Result values:
-sqrtvarc=12288.000000
+rowcount=          0
 Time: 0 | Result values:
-varc=0.000000
-Time: 0 | Result values:
-gvcmult=0.000000
-Time: 0 | Result values:
-gvcmult=0.000000
+map[          0]=1.500000
+map[          1]=4.375000
+map[          2]=1.500000
+map[          3]=4.375000
+map[          4]=1.500000
+map[          5]=4.375000
+map[          6]=1.500000
+map[          7]=4.375000
+map[          8]=1.500000
+map[          9]=4.375000
+map[         10]=1.500000
+map[         11]=4.375000
+map[         12]=1.500000
+map[         13]=4.375000
+map[         14]=1.500000
+map[         15]=4.375000
+map[         16]=1.500000
+map[         17]=4.375000
+map[         18]=1.500000
+map[         19]=4.375000
+map[         20]=1.500000
+map[         21]=4.375000
+map[         22]=1.500000
+map[         23]=4.375000
+map[         24]=1.500000
+Time: 5 | Result values:
+out1=4.500000
+Time: 5 | Result values:
+outsimp=2.250000
+Time: 5 | Result values:
+newval=0.750000
+Time: 5 | Result values:
+map[          0]=0.750000
+map[          1]=5.062500
+map[          2]=0.750000
+map[          3]=5.062500
+map[          4]=0.750000
+map[          5]=0.000000
+map[          6]=0.000000
+map[          7]=0.000000
+map[          8]=0.000000
+map[          9]=0.000000
+map[         10]=0.000000
+map[         11]=0.000000
+map[         12]=0.000000
+map[         13]=0.000000
+map[         14]=0.000000
+map[         15]=0.000000
+map[         16]=0.000000
+map[         17]=0.000000
+map[         18]=0.000000
+map[         19]=0.000000
+map[         20]=0.000000
+map[         21]=0.000000
+map[         22]=0.000000
+map[         23]=0.000000
+map[         24]=0.000000
+Time: 5 | Result values:
+rowcount=          5
+Time: 15 | Result values:
+out1=13.125000
+Time: 15 | Result values:
+outsimp=6.562500
+Time: 15 | Result values:
+newval=5.062500
+Time: 15 | Result values:
+map[          0]=0.750000
+map[          1]=5.062500
+map[          2]=0.750000
+map[          3]=5.062500
+map[          4]=0.750000
+map[          5]=5.062500
+map[          6]=0.750000
+map[          7]=5.062500
+map[          8]=0.750000
+map[          9]=5.062500
+map[         10]=0.000000
+map[         11]=0.000000
+map[         12]=0.000000
+map[         13]=0.000000
+map[         14]=0.000000
+map[         15]=0.000000
+map[         16]=0.000000
+map[         17]=0.000000
+map[         18]=0.000000
+map[         19]=0.000000
+map[         20]=0.000000
+map[         21]=0.000000
+map[         22]=0.000000
+map[         23]=0.000000
+map[         24]=0.000000
+Time: 15 | Result values:
+rowcount=         10
+Time: 25 | Result values:
+out1=4.500000
+Time: 25 | Result values:
+outsimp=2.250000
+Time: 25 | Result values:
+newval=0.750000
+Time: 25 | Result values:
+map[          0]=0.750000
+map[          1]=5.062500
+map[          2]=0.750000
+map[          3]=5.062500
+map[          4]=0.750000
+map[          5]=5.062500
+map[          6]=0.750000
+map[          7]=5.062500
+map[          8]=0.750000
+map[          9]=5.062500
+map[         10]=0.750000
+map[         11]=5.062500
+map[         12]=0.750000
+map[         13]=5.062500
+map[         14]=0.750000
+map[         15]=0.000000
+map[         16]=0.000000
+map[         17]=0.000000
+map[         18]=0.000000
+map[         19]=0.000000
+map[         20]=0.000000
+map[         21]=0.000000
+map[         22]=0.000000
+map[         23]=0.000000
+map[         24]=0.000000
+Time: 25 | Result values:
+rowcount=         15
+Time: 35 | Result values:
+out1=13.125000
+Time: 35 | Result values:
+outsimp=6.562500
+Time: 35 | Result values:
+newval=5.062500
+Time: 35 | Result values:
+map[          0]=0.750000
+map[          1]=5.062500
+map[          2]=0.750000
+map[          3]=5.062500
+map[          4]=0.750000
+map[          5]=5.062500
+map[          6]=0.750000
+map[          7]=5.062500
+map[          8]=0.750000
+map[          9]=5.062500
+map[         10]=0.750000
+map[         11]=5.062500
+map[         12]=0.750000
+map[         13]=5.062500
+map[         14]=0.750000
+map[         15]=5.062500
+map[         16]=0.750000
+map[         17]=5.062500
+map[         18]=0.750000
+map[         19]=5.062500
+map[         20]=0.000000
+map[         21]=0.000000
+map[         22]=0.000000
+map[         23]=0.000000
+map[         24]=0.000000
+Time: 35 | Result values:
+rowcount=         20
+Time: 45 | Result values:
+out1=4.500000
+Time: 45 | Result values:
+outsimp=2.250000
+Time: 45 | Result values:
+newval=0.750000
+Time: 45 | Result values:
+map[          0]=0.750000
+map[          1]=5.062500
+map[          2]=0.750000
+map[          3]=5.062500
+map[          4]=0.750000
+map[          5]=5.062500
+map[          6]=0.750000
+map[          7]=5.062500
+map[          8]=0.750000
+map[          9]=5.062500
+map[         10]=0.750000
+map[         11]=5.062500
+map[         12]=0.750000
+map[         13]=5.062500
+map[         14]=0.750000
+map[         15]=5.062500
+map[         16]=0.750000
+map[         17]=5.062500
+map[         18]=0.750000
+map[         19]=5.062500
+map[         20]=0.750000
+map[         21]=5.062500
+map[         22]=0.750000
+map[         23]=5.062500
+map[         24]=0.750000
+Time: 45 | Result values:
+rowcount=         25
+Time: 55 | Result values:
+out1=0.000000
+Time: 55 | Result values:
+outsimp=0.000000
+Time: 55 | Result values:
+newval=0.000000
