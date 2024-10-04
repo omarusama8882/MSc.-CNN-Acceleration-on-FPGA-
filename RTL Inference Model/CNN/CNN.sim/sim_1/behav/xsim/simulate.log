@@ -3,6 +3,10 @@ Time resolution is 1 ps
 Time: 0 | Result values:
 rowcount=          0
 Time: 0 | Result values:
+gmbvc=-1.500000
+Time: 0 | Result values:
+gvc=1.500000
+Time: 0 | Result values:
 map[          0]=1.500000
 map[          1]=4.375000
 map[          2]=1.500000
@@ -29,178 +33,410 @@ map[         22]=1.500000
 map[         23]=4.375000
 map[         24]=1.500000
 Time: 5 | Result values:
-out1=4.500000
+out1=2.250000
+out1=00000000000100100000000000000000
 Time: 5 | Result values:
 outsimp=2.250000
+outsimp=0001001000000000
 Time: 5 | Result values:
 newval=0.750000
 Time: 5 | Result values:
-map[          0]=0.750000
-map[          1]=5.062500
-map[          2]=0.750000
-map[          3]=5.062500
-map[          4]=0.750000
-map[          5]=0.000000
-map[          6]=0.000000
-map[          7]=0.000000
-map[          8]=0.000000
-map[          9]=0.000000
-map[         10]=0.000000
-map[         11]=0.000000
-map[         12]=0.000000
-map[         13]=0.000000
-map[         14]=0.000000
-map[         15]=0.000000
-map[         16]=0.000000
-map[         17]=0.000000
-map[         18]=0.000000
-map[         19]=0.000000
-map[         20]=0.000000
-map[         21]=0.000000
-map[         22]=0.000000
-map[         23]=0.000000
-map[         24]=0.000000
+outmap[          0]=0.750000
+outmap[          1]=5.062500
+outmap[          2]=0.750000
+outmap[          3]=5.062500
+outmap[          4]=0.750000
+outmap[          5]=0.000000
+outmap[          6]=0.000000
+outmap[          7]=0.000000
+outmap[          8]=0.000000
+outmap[          9]=0.000000
+outmap[         10]=0.000000
+outmap[         11]=0.000000
+outmap[         12]=0.000000
+outmap[         13]=0.000000
+outmap[         14]=0.000000
+outmap[         15]=0.000000
+outmap[         16]=0.000000
+outmap[         17]=0.000000
+outmap[         18]=0.000000
+outmap[         19]=0.000000
+outmap[         20]=0.000000
+outmap[         21]=0.000000
+outmap[         22]=0.000000
+outmap[         23]=0.000000
+outmap[         24]=0.000000
 Time: 5 | Result values:
 rowcount=          5
 Time: 15 | Result values:
-out1=13.125000
+out1=6.562500
+out1=00000000001101001000000000000000
 Time: 15 | Result values:
 outsimp=6.562500
+outsimp=0011010010000000
 Time: 15 | Result values:
 newval=5.062500
 Time: 15 | Result values:
-map[          0]=0.750000
-map[          1]=5.062500
-map[          2]=0.750000
-map[          3]=5.062500
-map[          4]=0.750000
-map[          5]=5.062500
-map[          6]=0.750000
-map[          7]=5.062500
-map[          8]=0.750000
-map[          9]=5.062500
-map[         10]=0.000000
-map[         11]=0.000000
-map[         12]=0.000000
-map[         13]=0.000000
-map[         14]=0.000000
-map[         15]=0.000000
-map[         16]=0.000000
-map[         17]=0.000000
-map[         18]=0.000000
-map[         19]=0.000000
-map[         20]=0.000000
-map[         21]=0.000000
-map[         22]=0.000000
-map[         23]=0.000000
-map[         24]=0.000000
+outmap[          0]=0.750000
+outmap[          1]=5.062500
+outmap[          2]=0.750000
+outmap[          3]=5.062500
+outmap[          4]=0.750000
+outmap[          5]=5.062500
+outmap[          6]=0.750000
+outmap[          7]=5.062500
+outmap[          8]=0.750000
+outmap[          9]=5.062500
+outmap[         10]=0.000000
+outmap[         11]=0.000000
+outmap[         12]=0.000000
+outmap[         13]=0.000000
+outmap[         14]=0.000000
+outmap[         15]=0.000000
+outmap[         16]=0.000000
+outmap[         17]=0.000000
+outmap[         18]=0.000000
+outmap[         19]=0.000000
+outmap[         20]=0.000000
+outmap[         21]=0.000000
+outmap[         22]=0.000000
+outmap[         23]=0.000000
+outmap[         24]=0.000000
 Time: 15 | Result values:
 rowcount=         10
 Time: 25 | Result values:
-out1=4.500000
+out1=2.250000
+out1=00000000000100100000000000000000
 Time: 25 | Result values:
 outsimp=2.250000
+outsimp=0001001000000000
 Time: 25 | Result values:
 newval=0.750000
 Time: 25 | Result values:
-map[          0]=0.750000
-map[          1]=5.062500
-map[          2]=0.750000
-map[          3]=5.062500
-map[          4]=0.750000
-map[          5]=5.062500
-map[          6]=0.750000
-map[          7]=5.062500
-map[          8]=0.750000
-map[          9]=5.062500
-map[         10]=0.750000
-map[         11]=5.062500
-map[         12]=0.750000
-map[         13]=5.062500
-map[         14]=0.750000
-map[         15]=0.000000
-map[         16]=0.000000
-map[         17]=0.000000
-map[         18]=0.000000
-map[         19]=0.000000
-map[         20]=0.000000
-map[         21]=0.000000
-map[         22]=0.000000
-map[         23]=0.000000
-map[         24]=0.000000
+outmap[          0]=0.750000
+outmap[          1]=5.062500
+outmap[          2]=0.750000
+outmap[          3]=5.062500
+outmap[          4]=0.750000
+outmap[          5]=5.062500
+outmap[          6]=0.750000
+outmap[          7]=5.062500
+outmap[          8]=0.750000
+outmap[          9]=5.062500
+outmap[         10]=0.750000
+outmap[         11]=5.062500
+outmap[         12]=0.750000
+outmap[         13]=5.062500
+outmap[         14]=0.750000
+outmap[         15]=0.000000
+outmap[         16]=0.000000
+outmap[         17]=0.000000
+outmap[         18]=0.000000
+outmap[         19]=0.000000
+outmap[         20]=0.000000
+outmap[         21]=0.000000
+outmap[         22]=0.000000
+outmap[         23]=0.000000
+outmap[         24]=0.000000
 Time: 25 | Result values:
 rowcount=         15
 Time: 35 | Result values:
-out1=13.125000
+out1=6.562500
+out1=00000000001101001000000000000000
 Time: 35 | Result values:
 outsimp=6.562500
+outsimp=0011010010000000
 Time: 35 | Result values:
 newval=5.062500
 Time: 35 | Result values:
-map[          0]=0.750000
-map[          1]=5.062500
-map[          2]=0.750000
-map[          3]=5.062500
-map[          4]=0.750000
-map[          5]=5.062500
-map[          6]=0.750000
-map[          7]=5.062500
-map[          8]=0.750000
-map[          9]=5.062500
-map[         10]=0.750000
-map[         11]=5.062500
-map[         12]=0.750000
-map[         13]=5.062500
-map[         14]=0.750000
-map[         15]=5.062500
-map[         16]=0.750000
-map[         17]=5.062500
-map[         18]=0.750000
-map[         19]=5.062500
-map[         20]=0.000000
-map[         21]=0.000000
-map[         22]=0.000000
-map[         23]=0.000000
-map[         24]=0.000000
+outmap[          0]=0.750000
+outmap[          1]=5.062500
+outmap[          2]=0.750000
+outmap[          3]=5.062500
+outmap[          4]=0.750000
+outmap[          5]=5.062500
+outmap[          6]=0.750000
+outmap[          7]=5.062500
+outmap[          8]=0.750000
+outmap[          9]=5.062500
+outmap[         10]=0.750000
+outmap[         11]=5.062500
+outmap[         12]=0.750000
+outmap[         13]=5.062500
+outmap[         14]=0.750000
+outmap[         15]=5.062500
+outmap[         16]=0.750000
+outmap[         17]=5.062500
+outmap[         18]=0.750000
+outmap[         19]=5.062500
+outmap[         20]=0.000000
+outmap[         21]=0.000000
+outmap[         22]=0.000000
+outmap[         23]=0.000000
+outmap[         24]=0.000000
 Time: 35 | Result values:
 rowcount=         20
 Time: 45 | Result values:
-out1=4.500000
+out1=2.250000
+out1=00000000000100100000000000000000
 Time: 45 | Result values:
 outsimp=2.250000
+outsimp=0001001000000000
 Time: 45 | Result values:
 newval=0.750000
 Time: 45 | Result values:
-map[          0]=0.750000
-map[          1]=5.062500
-map[          2]=0.750000
-map[          3]=5.062500
-map[          4]=0.750000
-map[          5]=5.062500
-map[          6]=0.750000
-map[          7]=5.062500
-map[          8]=0.750000
-map[          9]=5.062500
-map[         10]=0.750000
-map[         11]=5.062500
-map[         12]=0.750000
-map[         13]=5.062500
-map[         14]=0.750000
-map[         15]=5.062500
-map[         16]=0.750000
-map[         17]=5.062500
-map[         18]=0.750000
-map[         19]=5.062500
-map[         20]=0.750000
-map[         21]=5.062500
-map[         22]=0.750000
-map[         23]=5.062500
-map[         24]=0.750000
+outmap[          0]=0.750000
+outmap[          1]=5.062500
+outmap[          2]=0.750000
+outmap[          3]=5.062500
+outmap[          4]=0.750000
+outmap[          5]=5.062500
+outmap[          6]=0.750000
+outmap[          7]=5.062500
+outmap[          8]=0.750000
+outmap[          9]=5.062500
+outmap[         10]=0.750000
+outmap[         11]=5.062500
+outmap[         12]=0.750000
+outmap[         13]=5.062500
+outmap[         14]=0.750000
+outmap[         15]=5.062500
+outmap[         16]=0.750000
+outmap[         17]=5.062500
+outmap[         18]=0.750000
+outmap[         19]=5.062500
+outmap[         20]=0.750000
+outmap[         21]=5.062500
+outmap[         22]=0.750000
+outmap[         23]=5.062500
+outmap[         24]=0.750000
 Time: 45 | Result values:
 rowcount=         25
 Time: 55 | Result values:
 out1=0.000000
+out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Time: 55 | Result values:
 outsimp=0.000000
+outsimp=xxxxxxxxxxxxxxxx
 Time: 55 | Result values:
+newval=0.000000
+Time: 60 | Result values:
+gvc=15.375000
+Time: 60 | Result values:
+map[          0]=127.500000
+map[          1]=100.382812
+map[          2]=127.500000
+map[          3]=100.382812
+map[          4]=127.500000
+map[          5]=100.382812
+map[          6]=127.500000
+map[          7]=100.382812
+map[          8]=127.500000
+map[          9]=100.382812
+map[         10]=127.500000
+map[         11]=100.382812
+map[         12]=127.500000
+map[         13]=100.382812
+map[         14]=127.500000
+map[         15]=100.382812
+map[         16]=127.500000
+map[         17]=100.382812
+map[         18]=127.500000
+map[         19]=100.382812
+map[         20]=127.500000
+map[         21]=100.382812
+map[         22]=127.500000
+map[         23]=100.382812
+map[         24]=127.500000
+Time: 60 | Result values:
+gmbvc=-15.375488
+Time: 60 | Result values:
+rowcount=          0
+Time: 65 | Result values:
+out1=1960.312500
+out1=00111101010000101000000000000000
+Time: 65 | Result values:
+outsimp=8.312500
+outsimp=0100001010000000
+Time: 65 | Result values:
+newval=-7.062988
+Time: 65 | Result values:
+outmap[          0]=24.937012
+outmap[          1]=24.010254
+outmap[          2]=24.937012
+outmap[          3]=24.010254
+outmap[          4]=24.937012
+outmap[          5]=5.062500
+outmap[          6]=0.750000
+outmap[          7]=5.062500
+outmap[          8]=0.750000
+outmap[          9]=5.062500
+outmap[         10]=0.750000
+outmap[         11]=5.062500
+outmap[         12]=0.750000
+outmap[         13]=5.062500
+outmap[         14]=0.750000
+outmap[         15]=5.062500
+outmap[         16]=0.750000
+outmap[         17]=5.062500
+outmap[         18]=0.750000
+outmap[         19]=5.062500
+outmap[         20]=0.750000
+outmap[         21]=5.062500
+outmap[         22]=0.750000
+outmap[         23]=5.062500
+outmap[         24]=0.750000
+Time: 65 | Result values:
+rowcount=          5
+Time: 75 | Result values:
+out1=1543.385742
+out1=00110000001110110001011000000000
+Time: 75 | Result values:
+outsimp=7.385742
+outsimp=0011101100010110
+Time: 75 | Result values:
+newval=-7.989746
+Time: 75 | Result values:
+outmap[          0]=24.937012
+outmap[          1]=24.010254
+outmap[          2]=24.937012
+outmap[          3]=24.010254
+outmap[          4]=24.937012
+outmap[          5]=24.010254
+outmap[          6]=24.937012
+outmap[          7]=24.010254
+outmap[          8]=24.937012
+outmap[          9]=24.010254
+outmap[         10]=0.750000
+outmap[         11]=5.062500
+outmap[         12]=0.750000
+outmap[         13]=5.062500
+outmap[         14]=0.750000
+outmap[         15]=5.062500
+outmap[         16]=0.750000
+outmap[         17]=5.062500
+outmap[         18]=0.750000
+outmap[         19]=5.062500
+outmap[         20]=0.750000
+outmap[         21]=5.062500
+outmap[         22]=0.750000
+outmap[         23]=5.062500
+outmap[         24]=0.750000
+Time: 75 | Result values:
+rowcount=         10
+Time: 85 | Result values:
+out1=1960.312500
+out1=00111101010000101000000000000000
+Time: 85 | Result values:
+outsimp=8.312500
+outsimp=0100001010000000
+Time: 85 | Result values:
+newval=-7.062988
+Time: 85 | Result values:
+outmap[          0]=24.937012
+outmap[          1]=24.010254
+outmap[          2]=24.937012
+outmap[          3]=24.010254
+outmap[          4]=24.937012
+outmap[          5]=24.010254
+outmap[          6]=24.937012
+outmap[          7]=24.010254
+outmap[          8]=24.937012
+outmap[          9]=24.010254
+outmap[         10]=24.937012
+outmap[         11]=24.010254
+outmap[         12]=24.937012
+outmap[         13]=24.010254
+outmap[         14]=24.937012
+outmap[         15]=5.062500
+outmap[         16]=0.750000
+outmap[         17]=5.062500
+outmap[         18]=0.750000
+outmap[         19]=5.062500
+outmap[         20]=0.750000
+outmap[         21]=5.062500
+outmap[         22]=0.750000
+outmap[         23]=5.062500
+outmap[         24]=0.750000
+Time: 85 | Result values:
+rowcount=         15
+Time: 95 | Result values:
+out1=1543.385742
+out1=00110000001110110001011000000000
+Time: 95 | Result values:
+outsimp=7.385742
+outsimp=0011101100010110
+Time: 95 | Result values:
+newval=-7.989746
+Time: 95 | Result values:
+outmap[          0]=24.937012
+outmap[          1]=24.010254
+outmap[          2]=24.937012
+outmap[          3]=24.010254
+outmap[          4]=24.937012
+outmap[          5]=24.010254
+outmap[          6]=24.937012
+outmap[          7]=24.010254
+outmap[          8]=24.937012
+outmap[          9]=24.010254
+outmap[         10]=24.937012
+outmap[         11]=24.010254
+outmap[         12]=24.937012
+outmap[         13]=24.010254
+outmap[         14]=24.937012
+outmap[         15]=24.010254
+outmap[         16]=24.937012
+outmap[         17]=24.010254
+outmap[         18]=24.937012
+outmap[         19]=24.010254
+outmap[         20]=0.750000
+outmap[         21]=5.062500
+outmap[         22]=0.750000
+outmap[         23]=5.062500
+outmap[         24]=0.750000
+Time: 95 | Result values:
+rowcount=         20
+Time: 105 | Result values:
+out1=1960.312500
+out1=00111101010000101000000000000000
+Time: 105 | Result values:
+outsimp=8.312500
+outsimp=0100001010000000
+Time: 105 | Result values:
+newval=-7.062988
+Time: 105 | Result values:
+outmap[          0]=24.937012
+outmap[          1]=24.010254
+outmap[          2]=24.937012
+outmap[          3]=24.010254
+outmap[          4]=24.937012
+outmap[          5]=24.010254
+outmap[          6]=24.937012
+outmap[          7]=24.010254
+outmap[          8]=24.937012
+outmap[          9]=24.010254
+outmap[         10]=24.937012
+outmap[         11]=24.010254
+outmap[         12]=24.937012
+outmap[         13]=24.010254
+outmap[         14]=24.937012
+outmap[         15]=24.010254
+outmap[         16]=24.937012
+outmap[         17]=24.010254
+outmap[         18]=24.937012
+outmap[         19]=24.010254
+outmap[         20]=24.937012
+outmap[         21]=24.010254
+outmap[         22]=24.937012
+outmap[         23]=24.010254
+outmap[         24]=24.937012
+Time: 105 | Result values:
+rowcount=         25
+Time: 115 | Result values:
+out1=0.000000
+out1=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Time: 115 | Result values:
+outsimp=0.000000
+outsimp=xxxxxxxxxxxxxxxx
+Time: 115 | Result values:
 newval=0.000000

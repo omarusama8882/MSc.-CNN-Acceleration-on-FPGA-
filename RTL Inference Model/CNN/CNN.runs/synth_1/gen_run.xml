@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1727940918">
+<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1728045674">
   <File Type="PA-TCL" Name="BN_Channel.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="BN_Channel_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BN_Channel_reports.tcl"/>

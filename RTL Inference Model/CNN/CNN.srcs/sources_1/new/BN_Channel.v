@@ -25,11 +25,13 @@ outmap
     end
     //assign gmbvcomplement=~(gmbvc)+1'b1;
     
-   
-always @(posedge clk) begin
+   always@(map or gmbvc or gvc) begin
+    rowcounter=0;
+    end
+always @(posedge clk ) begin
         for(i=0;i<W;i=i+1) begin
             out1=map[16*(i+rowcounter)+:16]*gvc;        
-            outsimplified=out1[24:9];
+            outsimplified=out1[23:8];
             newval=outsimplified+gmbvc;
             outmap[16*(i+rowcounter)+:16]=newval;
         end
@@ -38,6 +40,7 @@ always @(posedge clk) begin
         end
        
 end     
+
      
      
      
