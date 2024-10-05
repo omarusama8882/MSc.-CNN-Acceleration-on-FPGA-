@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Oct  4 14:41:15 2024
-# Process ID: 19256
+# Start of session at: Fri Oct  4 22:53:02 2024
+# Process ID: 9296
 # Current directory: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1
 # Command line: vivado.exe -log BN_Channel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BN_Channel.tcl
 # Log file: C:/Users/HP/Desktop/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.runs/synth_1/BN_Channel.vds

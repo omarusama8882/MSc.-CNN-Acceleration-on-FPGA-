@@ -7,7 +7,7 @@ reg signed [15:0] mean;
 reg signed [(5*5*16)-1:0] map;
 wire signed [(5*5*16)-1:0] outmap;
 localparam SF1=2.0**-11.0;
-localparam SF2=2.0**-19.0;
+localparam SF2=2.0**-16.0;
 localparam SF3=2.0**-27.0;
 localparam SF=2.0**-8.0;
 
@@ -37,13 +37,13 @@ initial begin
   */
   
   clk=1'b0;
-   gmbvc=16'b1111010000000000;
-   gvc=16'b0000110000000000;
+   gmbvc=16'b1111111010000000;
+   gvc=16'b0000000110000000;
    map=400'b0000000110000000000001000110000000000001100000000000010001100000000000011000000000000100011000000000000110000000000001000110000000000001100000000000010001100000000000011000000000000100011000000000000110000000000001000110000000000001100000000000010001100000000000011000000000000100011000000000000110000000000001000110000000000001100000000000010001100000000000011000000000000100011000000000000110000000;
    #60
-     gvc=16'b0111101100000000;
+     gvc=16'b0000111101100001;
      map=400'b0111111110000000011001000110001001111111100000000110010001100010011111111000000001100100011000100111111110000000011001000110001001111111100000000110010001100010011111111000000001100100011000100111111110000000011001000110001001111111100000000110010001100010011111111000000001100100011000100111111110000000011001000110001001111111100000000110010001100010011111111000000001100100011000100111111110000000;
-     gmbvc=16'b1000010011111111;
+     gmbvc=16'b1111111011001111;
    
  //  forever #5 clk=~clk;
 
@@ -54,11 +54,11 @@ initial begin
 
 always@(gvc) begin
 $display("Time: %0d | Result values:", $time);
-$display("gvc=%f", gvc*SF1);
+$display("gvc=%f", gvc*SF);
 end
 always@(gmbvc) begin
 $display("Time: %0d | Result values:", $time);
-$display("gmbvc=%f", gmbvc*SF1);
+$display("gmbvc=%f", gmbvc*SF);
 end
 
 
@@ -74,7 +74,7 @@ $display("out1=%b",uut.out1);
 end
 always@(uut.outsimplified) begin
 $display("Time: %0d | Result values:", $time);
-$display("outsimp=%f", uut.outsimplified*SF1);
+$display("outsimp=%f", uut.outsimplified*SF);
 $display("outsimp=%b", uut.outsimplified);
 
 end
@@ -87,13 +87,13 @@ end
 end
 always@(uut.newval) begin
 $display("Time: %0d | Result values:", $time);
-$display("newval=%f", uut.newval*SF1);
+$display("newval=%f", uut.newval*SF);
 
 end
 always@(outmap) begin
 $display("Time: %0d | Result values:", $time);
 for(i=0;i<25;i=i+1) begin
-$display("outmap[%d]=%f",i,outmap[16*i+:16]*SF1);
+$display("outmap[%d]=%f",i,outmap[16*i+:16]*SF);
 end
 end
 

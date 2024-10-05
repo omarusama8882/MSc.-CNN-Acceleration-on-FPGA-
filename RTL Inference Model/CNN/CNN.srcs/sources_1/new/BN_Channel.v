@@ -32,6 +32,12 @@ always @(posedge clk ) begin
         for(i=0;i<W;i=i+1) begin
             out1=map[16*(i+rowcounter)+:16]*gvc;        
             outsimplified=out1[23:8];
+            if(outsimplified[15:8]==out1[31:16]) begin
+            
+            end
+            else begin
+            outsimplified[15:8]=8'b01111111;
+            end
             newval=outsimplified+gmbvc;
             outmap[16*(i+rowcounter)+:16]=newval;
         end
