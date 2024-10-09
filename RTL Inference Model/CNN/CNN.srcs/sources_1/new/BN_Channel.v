@@ -19,15 +19,15 @@ outmap
     //wire signed [15:0] gmbvcomplement;
     integer i;
     integer rowcounter;
-    initial begin
-    rowcounter=0;
+    //initial begin
+    //rowcounter=0;
     
-    end
+    //end
     //assign gmbvcomplement=~(gmbvc)+1'b1;
     
    always@(map or gmbvc or gvc) begin
-    rowcounter=0;
-    end
+        rowcounter=0;
+        end
 always @(posedge clk ) begin
         for(i=0;i<W;i=i+1) begin
             out1=map[16*(i+rowcounter)+:16]*gvc;        
@@ -46,6 +46,7 @@ always @(posedge clk ) begin
         end
        
 end     
+
 
      
      

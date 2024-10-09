@@ -1,9 +1,9 @@
 module BatchNormalization(
 batches,clk,gmbvc,gvc,outbatches
 );
-    parameter batch_size=5;
-    parameter H=5;
-    parameter W=5;
+    parameter batch_size=10;
+    parameter H=10;
+    parameter W=10;
     input signed[(H*W*batch_size*16)-1:0] batches;
     input signed[(batch_size*16)-1:0] gmbvc;
     input signed[(batch_size*16)-1:0] gvc;
@@ -31,15 +31,14 @@ batches,clk,gmbvc,gvc,outbatches
     
     end
     always@(gmbvc or gvc or batches) begin
-    
-    
     clkcounter=0;
     channel_counter=0;
     end
     always@(posedge clk)begin
-    if(clkcounter>=H) begin
+    if(clkcounter>H) begin
     clkcounter=0;
     outbatches[channel_counter*(H*W*16)+:(H*W*16)]=outchannel;
+    
     channel_counter=channel_counter+1;
     end
     if(clkcounter==0) begin
@@ -47,11 +46,7 @@ batches,clk,gmbvc,gvc,outbatches
     currgvc=gvc[16*channel_counter+:16];
     currgmbvc=gmbvc[16*channel_counter+:16];
     end
-    clkcounter=clkcounter+1;
-    
-    
-    
-    
+    clkcounter<=clkcounter+1;
     end
     
 endmodule

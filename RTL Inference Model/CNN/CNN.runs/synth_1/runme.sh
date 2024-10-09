@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log BatchNormalization.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BatchNormalization.tcl
+EAStep vivado -log BN_Channel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BN_Channel.tcl

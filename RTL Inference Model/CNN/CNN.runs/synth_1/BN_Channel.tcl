@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xcku5p-ffvb676-2-e
 
 set_param project.singleFileAddWarning.threshold 0
@@ -51,6 +52,7 @@ read_verilog -library xil_defaultlib {
   {D:/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BNChannel_tb.v}
   {D:/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BN Channel_tb2.v}
   {D:/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BatchNormalization.v}
+  {D:/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/new/BatchNormalization_tb.v}
 }
 read_ip -quiet {{D:/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0.xci}}
 set_property used_in_implementation false [get_files -all {{d:/MSc.-CNN-Acceleration-on-FPGA-/RTL Inference Model/CNN/CNN.srcs/sources_1/ip/c_addsub_0_1/c_addsub_0_ooc.xdc}}]
@@ -67,10 +69,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top BatchNormalization -part xcku5p-ffvb676-2-e
+synth_design -top BN_Channel -part xcku5p-ffvb676-2-e
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef BatchNormalization.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file BatchNormalization_utilization_synth.rpt -pb BatchNormalization_utilization_synth.pb"
+write_checkpoint -force -noxdef BN_Channel.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file BN_Channel_utilization_synth.rpt -pb BN_Channel_utilization_synth.pb"
