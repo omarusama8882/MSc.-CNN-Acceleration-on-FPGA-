@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xcku5p-ffvb676-2-e
 
 set_param project.singleFileAddWarning.threshold 0
@@ -69,10 +68,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top BN_Channel -part xcku5p-ffvb676-2-e
+synth_design -top BatchNormalization -part xcku5p-ffvb676-2-e
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef BN_Channel.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file BN_Channel_utilization_synth.rpt -pb BN_Channel_utilization_synth.pb"
+write_checkpoint -force -noxdef BatchNormalization.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file BatchNormalization_utilization_synth.rpt -pb BatchNormalization_utilization_synth.pb"

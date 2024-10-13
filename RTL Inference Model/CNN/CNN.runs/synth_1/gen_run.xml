@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1728472450">
-  <File Type="PA-TCL" Name="BN_Channel.tcl"/>
-  <File Type="REPORTS-TCL" Name="BN_Channel_reports.tcl"/>
-  <File Type="RDS-RDS" Name="BN_Channel.vds"/>
-  <File Type="RDS-UTIL" Name="BN_Channel_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="BN_Channel_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="BN_Channel.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1728806851">
+  <File Type="PA-TCL" Name="BatchNormalization.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="BatchNormalization_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="BatchNormalization_reports.tcl"/>
+  <File Type="RDS-RDS" Name="BatchNormalization.vds"/>
+  <File Type="RDS-UTIL" Name="BatchNormalization_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="BatchNormalization_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="BatchNormalization.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="BatchNormalization_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="BatchNormalization_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../Mobilenetv1 Lite.srcs/sources_1/new/Bitshift.v">
@@ -164,9 +167,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="BN_Channel"/>
-      <Option Name="TopLib" Val="xil_defaultlib"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/BN_Channel.v"/>
+      <Option Name="TopModule" Val="BatchNormalization"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

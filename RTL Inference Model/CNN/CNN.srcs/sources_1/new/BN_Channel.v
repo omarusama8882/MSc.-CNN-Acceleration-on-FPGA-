@@ -3,6 +3,7 @@ clk,
 gvc,
 gmbvc,
 map,
+rst,
 outmap
 );
     parameter H=5;
@@ -11,6 +12,7 @@ outmap
     input clk;
     input signed [15:0] gvc;
     input signed [15:0] gmbvc;
+   input rst;
     input signed [(H*W*16)-1:0] map;
     output reg signed [(H*W*16)-1:0] outmap;
     reg signed [31:0] out1;
@@ -28,7 +30,11 @@ outmap
    always@(map or gmbvc or gvc) begin
         rowcounter=0;
         end
-always @(posedge clk ) begin
+always @(posedge clk) begin
+        if(rst==1'b1) begin
+            rowcounter=0;         
+        end
+        else begin
         for(i=0;i<W;i=i+1) begin
             out1=map[16*(i+rowcounter)+:16]*gvc;        
             outsimplified=out1[23:8];
@@ -43,6 +49,11 @@ always @(posedge clk ) begin
         end
         if(rowcounter<(H*W)) begin
         rowcounter<=rowcounter+W;
+        end
+        else begin
+        rowcounter<=0;
+        end
+        
         end
        
 end     
