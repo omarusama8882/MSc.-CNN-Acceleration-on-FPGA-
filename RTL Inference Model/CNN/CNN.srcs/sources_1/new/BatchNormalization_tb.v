@@ -14,7 +14,6 @@ BatchNormalization uut(
 .gmbvc(gmbvc),
 .gvc(gvc),
 .outbatches(outmaps)
-
 );
 localparam SF=2.0**-8.0;
 always #5 clk=~clk;
@@ -33,6 +32,7 @@ $display("Time: %0d | Result values:", $time);
 $display("rst=%d", uut.uut.rst);
 
 end
+
 always@(uut.uut.rowcounter) begin
 $display("Time: %0d | Result values:", $time);
 $display("rowcount=%d", uut.uut.rowcounter);
