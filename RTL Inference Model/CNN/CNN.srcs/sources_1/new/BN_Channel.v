@@ -44,15 +44,17 @@ always @(posedge clk) begin
             outmodified=outsimplified;
 
             if(outsimplified<0) begin
-                 if(out1>0) begin
+           
+                 if(out1[31:16]>0) begin
                  outmodified[15:8]=8'b01111111;
                  end
+               //  $display("outmod=%b",outmodified);
              newval=outmodified+gmbvc; 
             
             end
            else if(outsimplified[15:8]!=out1[31:16]) begin
                     
-                     if(out1>0) begin
+                     if(out1[31:16]>0) begin
                         outmodified[15:8]=8'b01111111;
                      end
                      else begin
@@ -67,7 +69,9 @@ always @(posedge clk) begin
             newval=outsimplified+gmbvc;
             end
             if(newval<0) begin
+            //$display("newval=%b",newval);
             newval=16'b0000000000000000;
+           
             end
             outmap[16*(i+rowcounter)+:16]=newval;
         end

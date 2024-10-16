@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1728806851">
   <File Type="PA-TCL" Name="BatchNormalization.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="BatchNormalization_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BatchNormalization_reports.tcl"/>
   <File Type="RDS-RDS" Name="BatchNormalization.vds"/>
   <File Type="RDS-UTIL" Name="BatchNormalization_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="BatchNormalization_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="BatchNormalization.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="BatchNormalization_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="BatchNormalization_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../Mobilenetv1 Lite.srcs/sources_1/new/Bitshift.v">

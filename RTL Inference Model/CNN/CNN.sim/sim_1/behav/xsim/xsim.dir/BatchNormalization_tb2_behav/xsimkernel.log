@@ -1,0 +1,7 @@
+Running: xsim.dir/BatchNormalization_tb2_behav/xsimk.exe -simmode gui -wdb BatchNormalization_tb2_behav.wdb -simrunnum 0 -socket 56253
+Design successfully loaded
+Design Loading Memory Usage: 19756 KB (Peak: 19756 KB)
+Design Loading CPU Usage: 92 ms
+Simulation completed
+Simulation Memory Usage: 39764 KB (Peak: 39764 KB)
+Simulation CPU Usage: 320843 ms
